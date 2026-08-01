@@ -46,21 +46,26 @@ details:not([open]) > summary .acc-caret { transform: rotate(-90deg); }
 .card-head { list-style: none; cursor: pointer; display: flex; align-items: center;
   justify-content: space-between; gap: 10px; padding: 12px 2px; }
 .card-head::-webkit-details-marker { display: none; }
-.card-title { font-size: 15px; font-weight: 600; }
-.card-title .en { display: block; font-size: 12px; color: var(--muted); font-weight: 400; margin-top: 2px; }
+.card-title { font-size: 16px; font-weight: 600; }
+.card-title .en { display: block; font-size: 13px; color: var(--muted); font-weight: 400; margin-top: 2px; }
 .card-side { display: flex; align-items: center; gap: 8px; flex: 0 0 auto; }
 .datechip { background: var(--chip-blue); color: var(--brand-deep); border-radius: 999px;
   font-size: 11px; padding: 2px 8px; }
 .card[open] > .card-head .card-title { color: var(--brand-primary); }
-.card-body { padding: 0 2px 14px; font-size: 15px; line-height: 1.75; }
-.card-body h2, .card-body h3, .card-body h4 { color: var(--brand-deep); font-size: 15px; margin: 16px 0 6px; }
-.card-body p, .card-body ul, .card-body ol { margin: 6px 0; }
-.card-body li { margin: 3px 0; }
+.card-body { padding: 0 2px 14px; font-size: 17px; line-height: 1.85; }
+.card-body h2 { color: var(--brand-deep); font-size: 18px; margin: 18px 0 8px;
+  padding-left: 10px; border-left: 4px solid var(--brand-primary); }
+.card-body h3, .card-body h4 { color: var(--brand-deep); font-size: 17px; margin: 16px 0 6px; }
+.card-body p, .card-body ul, .card-body ol { margin: 8px 0; }
+.card-body ul, .card-body ol { padding-left: 22px; }
+.card-body li { margin: 6px 0; }
 .card-body a.wl { color: var(--brand-primary); text-decoration: none; border-bottom: 1px dashed var(--brand-primary); }
 .tw { overflow-x: auto; }
-.tw table { border-collapse: collapse; font-size: 13px; min-width: 100%; }
-.tw th, .tw td { border: 1px solid var(--soft-border); padding: 6px 8px; white-space: nowrap; text-align: left; }
+.tw table { border-collapse: collapse; font-size: 15px; min-width: 100%; }
+.tw th, .tw td { border: 1px solid var(--soft-border); padding: 8px 10px; white-space: nowrap; text-align: left; }
 .tw th { background: var(--soft); color: var(--brand-deep); }
+pre.mermaid { background: none; border: 0; text-align: center; overflow-x: auto; }
+pre.mermaid svg { max-width: 100%; height: auto; }
 .hidden { display: none !important; }
 footer { margin-top: 30px; text-align: center; color: var(--muted); font-size: 12px; }
 @media (max-width: 700px) {
@@ -73,10 +78,10 @@ footer { margin-top: 30px; text-align: center; color: var(--muted); font-size: 1
 <div class="wrap">
 <header>
   <h1>卡片筆記</h1>
-  <p>財富傳承・金融稅務・市場觀點｜145 張知識卡片</p>
+  <p>財富傳承・金融稅務・市場觀點｜160 張知識卡片</p>
 </header>
 <div class="searchbar"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg><input id="q" type="search" placeholder="搜尋卡片標題、英文、標籤" aria-label="搜尋卡片"></div>
-<nav class="chips"><button class="chip on" data-tab="02">金融理財</button><button class="chip" data-tab="01">人工智慧</button><button class="chip" data-tab="03">總體經濟</button><button class="chip" data-tab="04">地緣政治</button><button class="chip" data-tab="05">晶片產業</button><button class="chip" data-tab="07">知識管理</button><button class="chip" data-tab="09">市場觀點</button></nav>
+<nav class="chips"><button class="chip on" data-tab="02">金融理財</button><button class="chip" data-tab="01">人工智慧</button><button class="chip" data-tab="03">總體經濟</button><button class="chip" data-tab="04">地緣政治</button><button class="chip" data-tab="05">產業分析</button><button class="chip" data-tab="07">知識管理</button><button class="chip" data-tab="09">市場觀點</button></nav>
 <section class="panel on" data-tab="02"><details class="acc-sec" open><summary class="acc-sec-head"><span><span class="acc-sec-title">信託傳承</span><span class="acc-sub">02.01 信託與傳承架構・10張</span></span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="acc-sec-body"><details class="card" id="c1" data-s="信託稅制 trust taxation 卡片盒 金融 稅務 信託與傳承架構"><summary class="card-head"><span class="card-title">信託稅制<span class="en">Trust Taxation</span></span><span class="card-side"><span class="datechip">06/08</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>定義</h2>
 <p>針對信託財產在<strong>成立、存續、分配、消滅</strong>各階段所涉贈與稅、所得稅與遺產稅的課稅制度。信託課稅以「受益人為主體」的穿透課稅為原則，並依受益人是否為委託人本人決定是否課贈與稅。</p>
 <h2>延伸說明</h2>
@@ -1186,7 +1191,7 @@ footer { margin-top: 30px; text-align: center; color: var(--muted); font-size: 1
 <li>MAS 單一家族辦公室監理框架：<a href="https://www.mas.gov.sg/regulation/capital-markets/single-family-offices">https://www.mas.gov.sg/regulation/capital-markets/single-family-offices</a>（查證 2026-07-16）</li>
 <li>2023 年新加坡 31 億新元洗錢案：公開新聞報導（2023-08 起，路透／CNA 等）</li>
 <li>原始素材：用戶提供之翻譯講稿（2026-07-16）；譯稿中 SFO 門檻「1～2 億美元」為業界參考值，非法定標準</li>
-</ul></div></details><details class="card" id="c10" data-s="傳承工具三選一決策  卡片盒 金融 家族信託 財富傳承"><summary class="card-head"><span class="card-title">傳承工具三選一決策</span><span class="card-side"><span class="datechip">07/28</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>定義</h2>
+</ul></div></details><details class="card" id="c10" data-s="傳承工具三選一決策  卡片盒 金融 家族信託 財富傳承 信託與傳承架構"><summary class="card-head"><span class="card-title">傳承工具三選一決策</span><span class="card-side"><span class="datechip">07/28</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>定義</h2>
 <p>把資產（尤其農地）傳給子女時，在「<strong>直接贈與</strong>、<strong>本金他益信託</strong>、<strong>孳息他益信託</strong>」三種工具間，依稅負與目的選擇的決策框架。
 A decision framework for choosing among <strong>direct gift</strong>, <strong>principal-to-others trust</strong>, and <strong>income-to-others trust</strong> when passing assets (especially farmland) to the next generation.</p>
 <h2>延伸說明</h2>
@@ -8383,7 +8388,7 @@ Match the tool to the goal: pure tax saving → direct gift; control &amp; prote
 <li>台灣期貨交易所商品總覽：https://www.taifex.com.tw/cht/2/productList（查證 2026-06-08）</li>
 <li>金管會《境外結構型商品管理規則》（衍生品嵌入定義）</li>
 <li>原有內文（期貨/遠期/外匯遠期契約）整合補強</li>
-</ul></div></details><details class="card" id="c56" data-s="eln結構型商品架構收益與風險  卡片盒 境外結構型商品 eln 衍生性商品 金融 投資工具與商品"><summary class="card-head"><span class="card-title">ELN結構型商品架構收益與風險</span><span class="card-side"><span class="datechip">07/12</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>定義</h2>
+</ul></div></details><details class="card" id="c56" data-s="eln結構型商品架構收益與風險  卡片盒 境外結構型商品 eln 衍生性商品 金融 投資工具與商品"><summary class="card-head"><span class="card-title">ELN結構型商品架構收益與風險</span><span class="card-side"><span class="datechip">06/08</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>定義</h2>
 <p>ELN（Equity Linked Note，股權連結票券）是一種<strong>境外結構型商品</strong>，本質是「客戶賣出一個賣權（Short Put）給發行機構」：
 - <strong>賺的是</strong>：賣出 Put 收取的權利金，以高配息形式呈現。
 - <strong>賠的是</strong>：到期標的股價低於履約價時，須以履約價接股票（或現金結算差額）。</p>
@@ -13919,7 +13924,7 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <li>U.S. CHIPS and Science Act（2022）：<a href="https://www.congress.gov/bill/117th-congress/house-bill/4346/text">https://www.congress.gov/bill/117th-congress/house-bill/4346/text</a>（查證 2026-06-08）</li>
 <li>BIS 出口管制最新規則（2023 EAR Amendment）：<a href="https://www.federalregister.gov/documents/2023/10/25/2023-23049/export-controls-on-semiconductor-manufacturing-items">https://www.federalregister.gov/documents/2023/10/25/2023-23049/export-controls-on-semiconductor-manufacturing-items</a>（查證 2026-06-08）</li>
 <li>SIA（美國半導體產業協會）2025 年報：<a href="https://www.semiconductors.org">https://www.semiconductors.org/wp-content/uploads/2025/07/2025-SIA-State-of-the-Industry-Report.pdf</a>（查證 2026-06-08，PDF 連結以官網為準）</li>
-</ul></div></details></div></details></section><section class="panel" data-tab="05"><details class="acc-sec" open><summary class="acc-sec-head"><span><span class="acc-sec-title">晶片製程</span><span class="acc-sub">05.01 晶片與製程・5張</span></span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="acc-sec-body"><details class="card" id="c115" data-s="cpu 與 gpu 差異  卡片盒 半導體 晶片與製程"><summary class="card-head"><span class="card-title">CPU 與 GPU 差異</span><span class="card-side"><span class="datechip">06/08</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>定義</h2>
+</ul></div></details></div></details></section><section class="panel" data-tab="05"><details class="acc-sec" open><summary class="acc-sec-head"><span><span class="acc-sec-title">晶片製程</span><span class="acc-sub">05.01 晶片與製程・5張</span></span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="acc-sec-body"><details class="card" id="c115" data-s="cpu 與 gpu 差異  卡片盒 半導體 晶片與製程 產業分析"><summary class="card-head"><span class="card-title">CPU 與 GPU 差異</span><span class="card-side"><span class="datechip">06/08</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>定義</h2>
 <p><strong>CPU（Central Processing Unit，中央處理器）</strong> 是通用處理器，採用少量強力核心（4–64 個），針對「序列化、低延遲、分支密集」任務最佳化，是電腦的指揮中樞。</p>
 <p><strong>GPU（Graphics Processing Unit，圖形處理器）</strong> 是平行處理器，採用數千個輕量核心（NVIDIA H100：16,896 個 CUDA core），針對「高吞吐量、資料平行」工作負載（矩陣運算、影像渲染、AI 訓練推論）設計。</p>
 <p>兩者並非競爭關係，而是<strong>互補協作</strong>：CPU 負責程式邏輯、排程與 I/O；GPU 負責大量同質性浮點運算。</p>
@@ -13983,7 +13988,7 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <li><strong>VRAM 頻寬</strong>：NVIDIA H100 SXM 具備 3.35 TB/s HBM3 頻寬（對比一般 DDR5 ~100 GB/s），是 LLM 大批次推論的關鍵瓶頸解方。</li>
 </ul>
 <h3>架構差異流程圖</h3>
-<pre><code class="language-mermaid">graph TB
+<pre class="mermaid">graph TB
     Title[&quot;CPU vs GPU 架構差異&quot;]
     Title --&gt; CPUSide
     Title --&gt; GPUSide
@@ -14001,7 +14006,7 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
     GPUUse --&gt; AI
     AI --&gt; AICPU[&quot;CPU：調度、Tokenization、I/O&quot;]
     AI --&gt; AIGPU[&quot;GPU：矩陣乘法、訓練推論（10–100× faster）&quot;]
-</code></pre>
+</pre>
 <h3>一句話結論</h3>
 <p>CPU 像幾個聰明的全能員工處理複雜決策；GPU 像一支大軍對龐大資料同時做相同運算。</p>
 <h2>相關概念</h2>
@@ -14018,7 +14023,7 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <li>Patterson, D. &amp; Hennessy, J. L. (2017). <em>Computer Organization and Design: ARM Edition</em>. Morgan Kaufmann. — CPU/GPU 架構差異的標準教科書參考</li>
 <li>NVIDIA CUDA Programming Guide — SIMT 執行模型說明：<a href="https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#simt-architecture">https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#simt-architecture</a>（查證 2026-06-08）</li>
 <li>AnandTech — GPU Architecture Deep Dives（歷年 NVIDIA/AMD 架構評測）：<a href="https://www.anandtech.com/tag/gpu">https://www.anandtech.com/tag/gpu</a>（查證 2026-06-08）</li>
-</ul></div></details><details class="card" id="c116" data-s="手機soc mobile soc 卡片盒 半導體 科技 晶片與製程"><summary class="card-head"><span class="card-title">手機SoC<span class="en">Mobile SoC</span></span><span class="card-side"><span class="datechip">06/08</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h1>手機 SoC</h1>
+</ul></div></details><details class="card" id="c116" data-s="手機soc mobile soc 卡片盒 半導體 科技 晶片與製程 產業分析"><summary class="card-head"><span class="card-title">手機SoC<span class="en">Mobile SoC</span></span><span class="card-side"><span class="datechip">06/08</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h1>手機 SoC</h1>
 <h2>定義</h2>
 <p>System-on-Chip for smartphones：將 CPU、GPU、NPU（AI 引擎）、ISP、基頻數據機（Modem）、記憶體控制器與多媒體加速器整合於單一晶片的行動處理器，是決定手機效能、功耗與相機體驗的核心。</p>
 <h2>延伸說明</h2>
@@ -14044,7 +14049,7 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <li>Qualcomm Snapdragon 8 Elite 技術規格：<a href="https://www.qualcomm.com">https://www.qualcomm.com/products/mobile/snapdragon/smartphones/snapdragon-8-series-mobile-platforms/snapdragon-8-elite-mobile-platform</a>（查證 2026-06-08）</li>
 <li>MediaTek Dimensity 9400 技術說明：<a href="https://www.mediatek.com/products/smartphones-2/dimensity-9400">https://www.mediatek.com/products/smartphones-2/dimensity-9400</a>（查證 2026-06-08）</li>
 <li>AnandTech — SoC 架構評測（2019–2023 旗艦 SoC 比較）：<a href="https://www.anandtech.com/tag/soc">https://www.anandtech.com/tag/soc</a>（查證 2026-06-08）</li>
-</ul></div></details><details class="card" id="c117" data-s="台積電a14 a13 a12製程差異 tsmc a14 卡片盒 半導體 先進製程 台積電 晶片與製程"><summary class="card-head"><span class="card-title">台積電A14 A13 A12製程差異<span class="en">TSMC A14</span></span><span class="card-side"><span class="datechip">06/08</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h1>台積電 A14 / A13 / A12 製程差異</h1>
+</ul></div></details><details class="card" id="c117" data-s="台積電a14 a13 a12製程差異 tsmc a14 卡片盒 半導體 先進製程 台積電 晶片與製程 產業分析"><summary class="card-head"><span class="card-title">台積電A14 A13 A12製程差異<span class="en">TSMC A14</span></span><span class="card-side"><span class="datechip">06/08</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h1>台積電 A14 / A13 / A12 製程差異</h1>
 <h2>定義</h2>
 <p>TSMC Angstrom-class process roadmap：A14、A13、A12 是台積電在 N2（2nm）之後、以「埃米（Å, Angstrom）」命名的下一世代邏輯製程，全部採用 <strong>第二代 GAA Nanosheet</strong> 電晶體架構，鎖定 AI / HPC / 旗艦行動 SoC 應用。三者並非獨立節點，而是 <strong>A14 為主節點，A13 是其密度衍生版（shrink），A12 是其性能衍生版（backside power）</strong>。</p>
 <h2>三節點規格與差異</h2>
@@ -14131,7 +14136,7 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <li>IEEE IEDM 2023 — GAA Nanosheet transistor 學術基礎（第二代 GAA 平台設計規則之參考文獻）：<a href="https://www.ieeeiedm.com">https://www.ieeeiedm.com</a>（查證 2026-06-08）</li>
 <li>AnandTech — TSMC N2 及 A14 製程節點比較分析：<a href="https://www.anandtech.com/tag/tsmc">https://www.anandtech.com/tag/tsmc</a>（查證 2026-06-08）</li>
 <li><strong>注意</strong>：A14/A13/A12 量產時程（2028/2029）與規格數字（密度 +23%、面積 -6%、功耗 -25~30%）來自 TSMC 官方 Symposium 揭露資料；實際量產規格可能隨技術演進調整，請以 TSMC 最新官方聲明為準。</li>
-</ul></div></details><details class="card" id="c118" data-s="共同封裝光學 cpo cpo 卡片盒 半導體 先進封裝 ai 光通訊 晶片與製程"><summary class="card-head"><span class="card-title">共同封裝光學 CPO<span class="en">CPO</span></span><span class="card-side"><span class="datechip">06/08</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>定義</h2>
+</ul></div></details><details class="card" id="c118" data-s="共同封裝光學 cpo cpo 卡片盒 半導體 先進封裝 ai 光通訊 晶片與製程 產業分析"><summary class="card-head"><span class="card-title">共同封裝光學 CPO<span class="en">CPO</span></span><span class="card-side"><span class="datechip">06/08</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>定義</h2>
 <p><strong>Co-Packaged Optics (CPO)</strong> — 將光學元件（矽光子晶片 / 光引擎）與 ASIC（交換器、GPU、AI 加速器）<strong>同封裝整合</strong>，取代傳統可插拔光模組（Pluggable Optics），以縮短電訊號路徑、降低功耗並提高頻寬密度。</p>
 <h2>延伸說明</h2>
 <ul>
@@ -14160,7 +14165,7 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <li>NVIDIA Spectrum-X / Quantum 交換器 CPO 規劃（NVIDIA SC23 展示）：<a href="https://www.nvidia.com/en-us/networking/">https://www.nvidia.com/en-us/networking/</a>（查證 2026-06-08）</li>
 <li>Broadcom Tomahawk 5（51.2T CPO ready）技術白皮書：<a href="https://www.broadcom.com">https://www.broadcom.com/products/ethernet-connectivity/switching/strataxgs/bcm78900-series</a>（查證 2026-06-08）</li>
 <li>大立光 2026-04-14 法說會說明（CPO 業務確認）：資料來源為公開法說會記錄，可於公開資訊觀測站查詢：<a href="https://mops.twse.com.tw">https://mops.twse.com.tw</a>（查證 2026-06-08）</li>
-</ul></div></details><details class="card" id="c119" data-s="高階 ccl 銅箔基板 ccl 卡片盒 半導體 封裝材料 ai pcb 晶片與製程"><summary class="card-head"><span class="card-title">高階 CCL 銅箔基板<span class="en">CCL</span></span><span class="card-side"><span class="datechip">06/08</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>定義</h2>
+</ul></div></details><details class="card" id="c119" data-s="高階 ccl 銅箔基板 ccl 卡片盒 半導體 封裝材料 ai pcb 晶片與製程 產業分析"><summary class="card-head"><span class="card-title">高階 CCL 銅箔基板<span class="en">CCL</span></span><span class="card-side"><span class="datechip">06/08</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>定義</h2>
 <p><strong>Copper Clad Laminate (CCL)</strong> — 由銅箔、玻纖布與樹脂壓合而成的<strong>印刷電路板（PCB）關鍵基材</strong>。高階 CCL（Low Dk/Df，低介電常數／損耗）是 AI 伺服器、800G 交換器、CPO 封裝載板的必要材料，決定高頻高速訊號完整性與散熱表現。</p>
 <h2>延伸說明</h2>
 <ul>
@@ -14191,7 +14196,1183 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <li>台燿 (6274) 法說會資料（CPO / 800G 題材說明）：<a href="https://mops.twse.com.tw">https://mops.twse.com.tw</a>（查證 2026-06-08）</li>
 <li>TPCA（台灣電路板協會）— 高頻高速 CCL 材料技術報告（各等級 Dk/Df 數值說明）：<a href="https://www.tpca.org.tw">https://www.tpca.org.tw</a>（查證 2026-06-08）</li>
 <li><strong>注意</strong>：M6/M7/M8 等級之 Dk/Df 實際數值因廠商配方不同而略有差異，以各廠技術規格書為準；漲價數字（「外資喊 4 字頭」）為市場報導，非財務建議。</li>
-</ul></div></details></div></details></section><section class="panel" data-tab="07"><details class="acc-sec" open><summary class="acc-sec-head"><span><span class="acc-sec-title">知識方法</span><span class="acc-sub">07.01 知識管理方法論・7張</span></span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="acc-sec-body"><details class="card" id="c120" data-s="zettelkasten 卡片盒系統 slip box 卡片盒 知識管理 zettelkasten"><summary class="card-head"><span class="card-title">Zettelkasten 卡片盒系統<span class="en">Slip Box</span></span><span class="card-side"><span class="datechip">06/20</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>定義</h2>
+</ul></div></details></div></details><details class="acc-sec"><summary class="acc-sec-head"><span><span class="acc-sec-title">分析方法</span><span class="acc-sub">05.02 產業分析方法・2張</span></span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="acc-sec-body"><details class="card" id="c120" data-s="產業分析框架 industry analysis framework 卡片盒 產業分析 產業分析方法"><summary class="card-head"><span class="card-title">產業分析框架<span class="en">Industry Analysis Framework</span></span><span class="card-side"><span class="datechip">08/01</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>白話解釋</h2>
+<ul>
+<li>分析一個產業，就像認識一個新朋友的「家族」：這家人靠什麼賺錢（商業模式）、家裡誰說了算（競爭格局）。</li>
+<li>再看它正處於成長期還是養老期（生命週期）、上下游親戚關係如何（產業鏈）。</li>
+<li>把這四件事想通，再去看個股才不會見樹不見林。</li>
+<li><strong>EN</strong>｜Analyzing an industry is like getting to know a family: how they make money, who holds the power, whether they are growing or aging, and how they relate to suppliers and customers. Understand the industry first, then pick the stocks.</li>
+</ul>
+<h2>生活舉例</h2>
+<ul>
+<li>想投資手搖飲店？先看四件事：市場還在不在成長（生命週期）、開店門檻高不高（進入障礙）。</li>
+<li>再看原料茶葉糖漿被誰掌握（供應商力量）、消費者轉去喝別家容易嗎（轉換成本）。</li>
+<li>同樣邏輯搬到半導體、金融、航運都通用。</li>
+<li><strong>EN</strong>｜Before investing in a bubble-tea chain, check whether the market is still growing, how easy it is to enter, who controls the raw materials, and how easily customers switch. The same logic applies to semiconductors, banking, or shipping.</li>
+</ul>
+<h2>專業補充</h2>
+<p>三個最常用的框架：
+1. <strong>波特五力（Porter's Five Forces）</strong>：現有競爭者、潛在進入者、替代品、供應商議價力、買方議價力——五股力量愈強，產業愈難賺錢。
+2. <strong>產業生命週期（Industry Life Cycle）</strong>：導入期（燒錢搶市）→ 成長期（營收獲利雙升，估值最高）→ 成熟期（比市占與股息）→ 衰退期（剩者為王）。不同階段適用不同估值法：成長期看 PSR／營收增速，成熟期看 PER／殖利率。
+3. <strong>上中下游拆解（Value Chain）</strong>：畫出「原料 → 零組件 → 組裝 → 品牌通路」的鏈條，找出鏈上<strong>議價力最強、毛利最高</strong>的環節（微笑曲線兩端：研發與品牌）。</p>
+<p>分析順序建議：總經環境 → 產業結構 → 公司護城河（Top-down），與 <a class="wl" data-t="c121" href="#c121">景氣循環與產業輪動</a> 搭配使用。</p>
+<h2>相關概念</h2>
+<ul>
+<li><a class="wl" data-t="c121" href="#c121">景氣循環與產業輪動</a> — 產業在景氣不同階段的輪動位置</li>
+<li><a class="wl" data-t="c122" href="#c122">半導體產業鏈</a> — 上中下游拆解的實戰範例</li>
+<li><a class="wl" data-t="c109" href="#c109">景氣對策信號</a> — 台灣景氣位置的官方判讀工具</li>
+</ul>
+<h2>出處來源</h2>
+<ul>
+<li>維基百科「五力分析」：<a href="https://zh.wikipedia.org/wiki/五力分析">https://zh.wikipedia.org/wiki/五力分析</a>（查證 2026-08-01）</li>
+<li>維基百科「產品生命週期」：<a href="https://zh.wikipedia.org/wiki/產品生命週期">https://zh.wikipedia.org/wiki/產品生命週期</a>（查證 2026-08-01）</li>
+</ul></div></details><details class="card" id="c121" data-s="景氣循環與產業輪動 business cycle and sector rotation 卡片盒 產業分析 產業分析方法"><summary class="card-head"><span class="card-title">景氣循環與產業輪動<span class="en">Business Cycle and Sector Rotation</span></span><span class="card-side"><span class="datechip">08/01</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>白話解釋</h2>
+<ul>
+<li>經濟就像四季：復甦是春天、擴張是夏天、趨緩是秋天、衰退是冬天。</li>
+<li>春夏適合科技、原物料這種衝鋒型產業；秋冬適合民生消費、公用事業、醫療這種「景氣再差大家都要用」的防禦型產業。</li>
+<li>跟著季節換衣服，就是<strong>產業輪動</strong>。</li>
+<li><strong>EN</strong>｜The economy moves in seasons: recovery, expansion, slowdown, recession. Cyclical sectors (tech, materials) shine in spring and summer; defensive sectors (staples, utilities, healthcare) protect you in autumn and winter. Rotating with the cycle is sector rotation.</li>
+</ul>
+<h2>生活舉例</h2>
+<ul>
+<li>2020–2021 疫後資金寬鬆（春夏）：科技股、航運股大漲。</li>
+<li>2022 升息抗通膨（入秋）：科技股重挫，能源與必需消費相對抗跌。</li>
+<li>同一年裡「好學生」換人當——不是公司變了，是季節變了。</li>
+<li><strong>EN</strong>｜In 2020–2021 easy money lifted tech and shipping; in 2022 rate hikes crushed tech while energy and staples held up. The companies did not change — the season did.</li>
+</ul>
+<h2>專業補充</h2>
+<ul>
+<li><strong>循環四階段與受惠產業</strong>（美林投資時鐘 Merrill Lynch Investment Clock 概念）：</li>
+<li>復甦（低通膨＋成長回升）→ 科技、非必需消費、金融</li>
+<li>過熱（高通膨＋高成長）→ 能源、原物料、工業</li>
+<li>停滯（高通膨＋成長放緩）→ 現金、必需消費、醫療</li>
+<li>衰退（低通膨＋負成長）→ 公用事業、債券、高股息</li>
+<li><strong>領先指標</strong>：殖利率曲線（見 <a class="wl" data-t="c108" href="#c108">殖利率曲線_總經</a>）、製造業 PMI、台灣 <a class="wl" data-t="c109" href="#c109">景氣對策信號</a>。</li>
+<li><strong>循環股 vs 防禦股</strong>：循環股（Cyclical）獲利隨景氣大起大落，看「本益比低點常是獲利高點」的反直覺陷阱；防禦股（Defensive）獲利穩定，估值看股息率。</li>
+<li>利率環境是輪動的總開關：參見 <a class="wl" data-t="c105" href="#c105">聯準會 Fed 利率政策</a>。</li>
+</ul>
+<h2>相關概念</h2>
+<ul>
+<li><a class="wl" data-t="c120" href="#c120">產業分析框架</a> — 判斷單一產業結構的工具</li>
+<li><a class="wl" data-t="c105" href="#c105">聯準會 Fed 利率政策</a> — 驅動循環的核心變數</li>
+<li><a class="wl" data-t="c109" href="#c109">景氣對策信號</a> — 台灣景氣位置判讀</li>
+<li><a class="wl" data-t="c108" href="#c108">殖利率曲線_總經</a> — 衰退領先指標</li>
+</ul>
+<h2>出處來源</h2>
+<ul>
+<li>維基百科「景氣循環」：<a href="https://zh.wikipedia.org/wiki/經濟周期">https://zh.wikipedia.org/wiki/經濟周期</a>（查證 2026-08-01）</li>
+<li>維基百科「Sector rotation」：<a href="https://en.wikipedia.org/wiki/Sector_rotation">https://en.wikipedia.org/wiki/Sector_rotation</a>（查證 2026-08-01）</li>
+</ul></div></details></div></details><details class="acc-sec"><summary class="acc-sec-head"><span><span class="acc-sec-title">科技產業</span><span class="acc-sub">05.03 科技產業・3張</span></span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="acc-sec-body"><details class="card" id="c122" data-s="半導體產業鏈 semiconductor value chain 卡片盒 產業分析 科技產業"><summary class="card-head"><span class="card-title">半導體產業鏈<span class="en">Semiconductor Value Chain</span></span><span class="card-side"><span class="datechip">08/01</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>白話解釋</h2>
+<ul>
+<li>一顆晶片的誕生像蓋房子：有人畫設計圖（IC 設計）、有人負責施工（晶圓代工）、有人做裝潢驗收（封裝測試）。</li>
+<li>還有人專門賣工具和建材（設備與材料）。</li>
+<li>台灣最強的是「施工」——台積電就是全世界最會蓋的營造廠，蘋果、輝達都要排隊請它施工。</li>
+<li><strong>EN</strong>｜Making a chip is like building a house: designers draw the blueprint (IC design), foundries do the construction (wafer fabrication), packagers do the finishing (assembly and test). Taiwan dominates construction — TSMC is the builder Apple and NVIDIA queue up for.</li>
+</ul>
+<h2>生活舉例</h2>
+<ul>
+<li>一支 iPhone 的處理器：Apple 設計（美國）→ 台積電製造（台灣）→ 日月光封裝測試（台灣）。</li>
+<li>製造設備跟 ASML（荷蘭）與應用材料（美國）買，光阻劑等材料多向日本買。</li>
+<li>一顆晶片繞地球一圈，才進到你的口袋。</li>
+<li><strong>EN</strong>｜An iPhone chip is designed by Apple in the US, fabricated by TSMC in Taiwan, packaged by ASE, made with Dutch and American equipment and Japanese materials. One chip travels the globe before reaching your pocket.</li>
+</ul>
+<h2>專業補充</h2>
+<ul>
+<li><strong>上游｜IC 設計（Fabless）</strong>：只設計不生產，毛利最高。美國：NVIDIA、AMD、Qualcomm、Broadcom；台灣：聯發科、聯詠、瑞昱。</li>
+<li><strong>中游｜晶圓代工（Foundry）</strong>：資本支出巨大、先進製程寡占。台積電全球市占約六成、先進製程市占逾九成；其次三星、英特爾（IDM 轉型代工）、聯電、格羅方德（成熟製程）。</li>
+<li><strong>下游｜封裝測試（OSAT）</strong>：日月光投控為全球最大委外封測廠；先進封裝（CoWoS）因 AI 晶片需求成為新瓶頸。</li>
+<li><strong>設備與材料</strong>：ASML（EUV 曝光機獨家）、應用材料、科林研發、東京威力科創；材料看信越化學、SUMCO（矽晶圓）。</li>
+<li><strong>記憶體</strong>：另一條支線——三星、SK 海力士、美光；HBM（高頻寬記憶體）是 AI 時代的關鍵料件。</li>
+</ul>
+<h2>台灣公司</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>環節</th>
+<th>代表公司</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IC 設計</td>
+<td>聯發科、聯詠、瑞昱</td>
+</tr>
+<tr>
+<td>晶圓代工</td>
+<td>台積電、聯電、世界先進</td>
+</tr>
+<tr>
+<td>封測</td>
+<td>日月光投控、京元電子</td>
+</tr>
+<tr>
+<td>設備／材料</td>
+<td>弘塑、辛耘、中砂</td>
+</tr>
+</tbody>
+</table></div>
+<h2>美國公司</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>環節</th>
+<th>代表公司</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IC 設計</td>
+<td>NVIDIA、AMD、Qualcomm、Broadcom</td>
+</tr>
+<tr>
+<td>IDM</td>
+<td>Intel、Texas Instruments、Micron（記憶體）</td>
+</tr>
+<tr>
+<td>設備</td>
+<td>Applied Materials、Lam Research、KLA</td>
+</tr>
+</tbody>
+</table></div>
+<h2>相關概念</h2>
+<ul>
+<li><a class="wl" data-t="c117" href="#c117">台積電A14 A13 A12製程差異</a> — 先進製程路線圖</li>
+<li><a class="wl" data-t="c115" href="#c115">CPU 與 GPU 差異</a> — 晶片產品的兩大架構</li>
+<li><a class="wl" data-t="c118" href="#c118">共同封裝光學 CPO</a> — 先進封裝的前沿題材</li>
+<li><a class="wl" data-t="c123" href="#c123">AI伺服器供應鏈</a> — 半導體最大的下游需求</li>
+<li><a class="wl" data-t="c120" href="#c120">產業分析框架</a> — 上中下游拆解方法論</li>
+</ul>
+<h2>出處來源</h2>
+<ul>
+<li>維基百科「台積電」：<a href="https://zh.wikipedia.org/wiki/台積電">https://zh.wikipedia.org/wiki/台積電</a>（查證 2026-08-01）</li>
+<li>維基百科「半導體產業」：<a href="https://en.wikipedia.org/wiki/Semiconductor_industry">https://en.wikipedia.org/wiki/Semiconductor_industry</a>（查證 2026-08-01）</li>
+</ul></div></details><details class="card" id="c123" data-s="ai伺服器供應鏈 ai server supply chain 卡片盒 產業分析 科技產業"><summary class="card-head"><span class="card-title">AI伺服器供應鏈<span class="en">AI Server Supply Chain</span></span><span class="card-side"><span class="datechip">08/01</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>白話解釋</h2>
+<ul>
+<li>AI 伺服器就是「裝滿頂級 AI 晶片的超級電腦」，雲端巨頭買來訓練和運行 AI 模型。</li>
+<li>輝達賣「大腦」（GPU）賺走最大一塊；台灣廠商把大腦組裝成整台機器，搭配散熱和電源。</li>
+<li>全世界九成以上的 AI 伺服器，都是台灣供應鏈組出來的。</li>
+<li><strong>EN</strong>｜An AI server is a supercomputer packed with top-end GPUs that cloud giants buy to train and run AI models. NVIDIA sells the "brain" and takes the biggest cut; Taiwanese companies assemble the machines — over ninety percent of the world's AI servers come through Taiwan's supply chain.</li>
+</ul>
+<h2>生活舉例</h2>
+<ul>
+<li>你問 ChatGPT 一個問題，答案是在微軟資料中心的 AI 伺服器上算出來的。</li>
+<li>那台機器：晶片輝達設計、台積電製造，整機鴻海或廣達組裝，散熱模組來自奇鋐或雙鴻。</li>
+<li>一句回答，養活一整條台灣供應鏈。</li>
+<li><strong>EN</strong>｜When you ask ChatGPT a question, the answer is computed on AI servers in a Microsoft data center: NVIDIA chips made by TSMC, assembled by Foxconn or Quanta, cooled by AVC or Auras. One answer feeds an entire Taiwanese supply chain.</li>
+</ul>
+<h2>專業補充</h2>
+<ul>
+<li><strong>價值分配</strong>：GPU／ASIC 晶片佔整機成本最大宗（H100/B 系列單價數萬美元），故輝達毛利率遠高於組裝廠（毛利個位數到低雙位數）。</li>
+<li><strong>兩條路線</strong>：通用 GPU（NVIDIA、AMD）vs 客製化 ASIC（Google TPU、AWS Trainium，由 Broadcom／世芯／創意協助設計）——雲端巨頭自研晶片是對輝達議價的長期威脅。</li>
+<li><strong>關鍵瓶頸</strong>：台積電 CoWoS 先進封裝產能、HBM 高頻寬記憶體（SK 海力士領先、美光追趕）、以及資料中心電力供應。</li>
+<li><strong>散熱升級</strong>：氣冷 → 液冷（水冷板、浸沒式）是 GB 系列機櫃世代的明確趨勢，散熱股因此重評價。</li>
+<li><strong>需求方</strong>：四大雲端業者（微軟、Google、亞馬遜、Meta）的資本支出（CapEx）指引，是整條供應鏈的領先指標。</li>
+</ul>
+<h2>台灣公司</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>環節</th>
+<th>代表公司</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>整機組裝（代工五哥）</td>
+<td>鴻海、廣達、緯創、緯穎、英業達</td>
+</tr>
+<tr>
+<td>ASIC 設計服務</td>
+<td>世芯-KY、創意電子</td>
+</tr>
+<tr>
+<td>散熱</td>
+<td>奇鋐、雙鴻</td>
+</tr>
+<tr>
+<td>電源</td>
+<td>台達電、光寶科</td>
+</tr>
+<tr>
+<td>機殼／滑軌</td>
+<td>勤誠、川湖</td>
+</tr>
+</tbody>
+</table></div>
+<h2>美國公司</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>環節</th>
+<th>代表公司</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI 晶片</td>
+<td>NVIDIA、AMD、Broadcom</td>
+</tr>
+<tr>
+<td>品牌伺服器</td>
+<td>Dell、HPE、Supermicro</td>
+</tr>
+<tr>
+<td>雲端需求方</td>
+<td>Microsoft、Google、Amazon、Meta</td>
+</tr>
+<tr>
+<td>記憶體</td>
+<td>Micron（HBM）</td>
+</tr>
+</tbody>
+</table></div>
+<h2>相關概念</h2>
+<ul>
+<li><a class="wl" data-t="c122" href="#c122">半導體產業鏈</a> — 上游晶片從哪來</li>
+<li><a class="wl" data-t="c115" href="#c115">CPU 與 GPU 差異</a> — 為何 AI 要用 GPU</li>
+<li><a class="wl" data-t="c118" href="#c118">共同封裝光學 CPO</a> — 資料中心互連的下一步</li>
+<li><a class="wl" data-t="c119" href="#c119">高階 CCL 銅箔基板</a> — AI 板材受惠者</li>
+<li><a class="wl" data-t="c124" href="#c124">軟體與雲端產業</a> — 買伺服器的人</li>
+</ul>
+<h2>出處來源</h2>
+<ul>
+<li>維基百科「輝達」：<a href="https://zh.wikipedia.org/wiki/輝達">https://zh.wikipedia.org/wiki/輝達</a>（查證 2026-08-01）</li>
+<li>維基百科「Foxconn」：<a href="https://zh.wikipedia.org/wiki/鴻海科技集團">https://zh.wikipedia.org/wiki/鴻海科技集團</a>（查證 2026-08-01）</li>
+</ul></div></details><details class="card" id="c124" data-s="軟體與雲端產業 software and cloud industry 卡片盒 產業分析 科技產業"><summary class="card-head"><span class="card-title">軟體與雲端產業<span class="en">Software and Cloud Industry</span></span><span class="card-side"><span class="datechip">08/01</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>白話解釋</h2>
+<ul>
+<li>雲端就是「用租的電腦」：企業不必自己買機房，向微軟、亞馬遜、Google 租算力，按用量付費，像繳水電費。</li>
+<li>軟體業則從「賣光碟」進化成「收月費」（訂閱制 SaaS），收入細水長流。</li>
+<li>訂閱制是華爾街最愛的商業模式之一：收入可預測、毛利高。</li>
+<li><strong>EN</strong>｜Cloud computing means renting computers: companies pay Microsoft, Amazon, or Google like a utility bill instead of building data centers. Software evolved from selling discs to subscriptions (SaaS) — recurring revenue that Wall Street loves.</li>
+</ul>
+<h2>生活舉例</h2>
+<ul>
+<li>你公司用的 Microsoft 365、存照片的 iCloud、追劇的 Netflix，背後全是雲端。</li>
+<li>Netflix 自己不蓋機房，影片都放在亞馬遜 AWS 上。</li>
+<li>你每月繳的訂閱費，一部分變成雲端巨頭的「房租收入」。</li>
+<li><strong>EN</strong>｜Microsoft 365 at work, iCloud for photos, Netflix for shows — all run on the cloud. Netflix hosts its videos on Amazon AWS. Part of your monthly subscription becomes "rent" collected by the cloud giants.</li>
+</ul>
+<h2>專業補充</h2>
+<ul>
+<li><strong>三大公有雲</strong>：AWS（亞馬遜，市占第一）、Azure（微軟，企業滲透最深）、Google Cloud——合計市占約六成，規模經濟與資本支出形成極高進入門檻。</li>
+<li><strong>SaaS 估值邏輯</strong>：看 ARR（年度經常性收入）、NRR（淨收入留存率 &gt;110% 為佳）、Rule of 40（營收成長率＋利潤率 ≥ 40）。</li>
+<li><strong>AI 改寫格局</strong>：大型語言模型讓雲端巨頭資本支出暴增（買 AI 伺服器），同時 AI 功能訂閱（Copilot 類）成為新收費層；「AI 是否吃掉傳統 SaaS」是 2025 年後最大的產業辯論。</li>
+<li><strong>台灣角色</strong>：台灣缺乏全球級軟體公司，主要以資訊服務（系統整合、MSP 雲端代理）參與，規模與美國不可同日而語——這正是台美產業結構最大的差異。</li>
+</ul>
+<h2>台灣公司</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>環節</th>
+<th>代表公司</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>資訊服務／系統整合</td>
+<td>精誠資訊、伊雲谷、緯軟</td>
+</tr>
+<tr>
+<td>電信與資料中心</td>
+<td>中華電信、遠傳、台灣大</td>
+</tr>
+</tbody>
+</table></div>
+<h2>美國公司</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>環節</th>
+<th>代表公司</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>公有雲</td>
+<td>Amazon（AWS）、Microsoft（Azure）、Google（GCP）</td>
+</tr>
+<tr>
+<td>企業軟體 SaaS</td>
+<td>Salesforce、ServiceNow、Adobe、Oracle</td>
+</tr>
+<tr>
+<td>資安</td>
+<td>Palo Alto Networks、CrowdStrike</td>
+</tr>
+<tr>
+<td>AI 模型</td>
+<td>OpenAI、Anthropic（未上市）</td>
+</tr>
+</tbody>
+</table></div>
+<h2>相關概念</h2>
+<ul>
+<li><a class="wl" data-t="c123" href="#c123">AI伺服器供應鏈</a> — 雲端巨頭資本支出的去向</li>
+<li><a class="wl" data-t="c120" href="#c120">產業分析框架</a> — 訂閱制商業模式的護城河分析</li>
+<li><a class="wl" data-t="c134" href="#c134">美國重要公司總覽</a> — 七巨頭中五家是軟體雲端公司</li>
+</ul>
+<h2>出處來源</h2>
+<ul>
+<li>維基百科「雲端運算」：<a href="https://zh.wikipedia.org/wiki/雲端運算">https://zh.wikipedia.org/wiki/雲端運算</a>（查證 2026-08-01）</li>
+<li>維基百科「軟體即服務」：<a href="https://zh.wikipedia.org/wiki/軟體即服務">https://zh.wikipedia.org/wiki/軟體即服務</a>（查證 2026-08-01）</li>
+</ul></div></details></div></details><details class="acc-sec"><summary class="acc-sec-head"><span><span class="acc-sec-title">傳產金融</span><span class="acc-sub">05.04 傳產與金融・4張</span></span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="acc-sec-body"><details class="card" id="c125" data-s="金融產業 financial industry 卡片盒 產業分析 傳產與金融"><summary class="card-head"><span class="card-title">金融產業<span class="en">Financial Industry</span></span><span class="card-side"><span class="datechip">08/01</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>白話解釋</h2>
+<ul>
+<li>金融業賺三種錢：<strong>利差</strong>（低利吸收存款、高利放款出去）、<strong>手續費</strong>（幫你買基金保險收佣金）、<strong>投資收益</strong>（自己拿錢去投資）。</li>
+<li>台灣特色是「<strong>金控</strong>」：一張執照底下同時有銀行＋證券＋保險，像金融百貨公司。</li>
+<li><strong>EN</strong>｜Banks earn three ways: interest spread, fees, and investment income. Taiwan's specialty is the financial holding company — a department store combining a bank, a broker, and an insurer under one roof.</li>
+</ul>
+<h2>生活舉例</h2>
+<ul>
+<li>你把錢存在銀行拿 1.5% 利息，銀行轉手用 2.5% 房貸借給別人——中間 1% 就是銀行的利差收入。</li>
+<li>富邦金去年賺的錢，一大半其實來自旗下富邦人壽的投資部位，而不是銀行放款。</li>
+<li><strong>EN</strong>｜You deposit at 1.5%, the bank lends it out at 2.5% for mortgages — the 1% gap is the spread. Much of Fubon's profit actually comes from its life-insurance investment book, not lending.</li>
+</ul>
+<h2>專業補充</h2>
+<ul>
+<li><strong>銀行股怎麼看</strong>：淨利差（NIM）、放款成長、逾放比與備抵覆蓋率；升息循環通常有利銀行利差。</li>
+<li><strong>壽險股怎麼看</strong>：本質是「用保費養一個大型投資部位」——看避險成本（台美利差）、股債評價、CSM（合約服務邊際，IFRS 17 制度下的新利潤指標）。</li>
+<li><strong>證券股怎麼看</strong>：靠天吃飯，獲利與台股成交量高度連動。</li>
+<li><strong>官股 vs 民營</strong>：官股金控（兆豐、第一、華南）穩定配息、公教色彩；民營（富邦、國泰、中信）獲利彈性大、壽險占比高。</li>
+<li><strong>殖利率陷阱</strong>：金融股常被當定存股，但壽險型金控獲利波動大，配息並非年年穩定。</li>
+</ul>
+<h2>台灣公司</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>類型</th>
+<th>代表公司</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>壽險型金控</td>
+<td>富邦金、國泰金</td>
+</tr>
+<tr>
+<td>銀行型金控</td>
+<td>中信金、玉山金、台新新光金</td>
+</tr>
+<tr>
+<td>官股金控</td>
+<td>兆豐金、第一金、合庫金</td>
+</tr>
+<tr>
+<td>證券型</td>
+<td>元大金（含最大投信 ETF 業務）</td>
+</tr>
+</tbody>
+</table></div>
+<h2>美國公司</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>類型</th>
+<th>代表公司</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>綜合銀行</td>
+<td>JPMorgan、Bank of America</td>
+</tr>
+<tr>
+<td>投資銀行</td>
+<td>Goldman Sachs、Morgan Stanley</td>
+</tr>
+<tr>
+<td>支付網路</td>
+<td>Visa、Mastercard</td>
+</tr>
+<tr>
+<td>保險／控股</td>
+<td>Berkshire Hathaway</td>
+</tr>
+<tr>
+<td>資產管理</td>
+<td>BlackRock（全球最大 ETF 發行商）</td>
+</tr>
+</tbody>
+</table></div>
+<h2>相關概念</h2>
+<ul>
+<li><a class="wl" data-t="c105" href="#c105">聯準會 Fed 利率政策</a> — 利率是金融業獲利的總開關</li>
+<li><a class="wl" data-t="c108" href="#c108">殖利率曲線_總經</a> — 曲線形狀決定銀行利差</li>
+<li><a class="wl" data-t="c120" href="#c120">產業分析框架</a> — 金融業的護城河：特許執照與規模</li>
+<li><a class="wl" data-t="c133" href="#c133">台灣重要公司總覽</a> — 金控在台股權值中的位置</li>
+</ul>
+<h2>出處來源</h2>
+<ul>
+<li>維基百科「金融控股公司」：<a href="https://zh.wikipedia.org/wiki/金融控股公司">https://zh.wikipedia.org/wiki/金融控股公司</a>（查證 2026-08-01）</li>
+<li>金管會銀行局統計資訊：<a href="https://www.banking.gov.tw">https://www.banking.gov.tw</a>（查證 2026-08-01）</li>
+</ul></div></details><details class="card" id="c126" data-s="航運產業 shipping industry 卡片盒 產業分析 傳產與金融"><summary class="card-head"><span class="card-title">航運產業<span class="en">Shipping Industry</span></span><span class="card-side"><span class="datechip">08/01</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>白話解釋</h2>
+<ul>
+<li>航運是「海上的貨運公司」，分三種：<strong>貨櫃</strong>（運成衣、電子產品等雜貨）、<strong>散裝</strong>（運鐵礦砂、穀物等原料）、<strong>空運</strong>（運急件與高價品）。</li>
+<li>運價像菜價一樣天天波動——船的數量短期固定，貨量一多運價就暴漲，是典型的<strong>景氣循環股</strong>。</li>
+<li><strong>EN</strong>｜Shipping is the ocean's trucking business: container ships carry goods, bulk carriers move raw materials, air cargo handles urgent freight. Freight rates swing like vegetable prices — classic cyclical stocks.</li>
+</ul>
+<h2>生活舉例</h2>
+<ul>
+<li>2021 年疫情塞港，一只貨櫃從上海到洛杉磯的運價從 2,000 美元飆到 2 萬美元，長榮那年賺了超過兩個資本額，股票被稱為「航海王」。</li>
+<li>2023 年運價跌回原點，同一批公司獲利縮水九成——買循環股買在獲利最好的一年，往往是最貴的錯誤。</li>
+<li><strong>EN</strong>｜In 2021 port congestion pushed Shanghai–LA container rates from about USD 2,000 to 20,000, and Evergreen earned more than twice its capital. By 2023 rates collapsed and profits shrank ninety percent — buying cyclicals at peak earnings is the classic trap.</li>
+</ul>
+<h2>專業補充</h2>
+<ul>
+<li><strong>關鍵指標</strong>：貨櫃看 SCFI（上海出口集裝箱運價指數）、散裝看 BDI（波羅的海乾散貨指數）——兩者都是每週公布的即時景氣溫度計。</li>
+<li><strong>供給面才是主角</strong>：新船訂單量（手持訂單占現有船隊比）決定兩三年後的運價天花板；紅海繞道、塞港等事件則造成短期供給收縮。</li>
+<li><strong>貨櫃三雄比較</strong>：長榮（全球前七大、聯盟成員）、陽明（官股色彩）、萬海（近洋線為主，波動更大）。</li>
+<li><strong>估值方法</strong>：循環股不能用單年本益比，改看「本淨比（P/B）歷史區間」＋手上現金；獲利高峰時 P/E 最低往往是賣點。</li>
+<li><strong>空運</strong>：華航、長榮航客貨兼營，AI 晶片與電商小包是貨運新需求。</li>
+</ul>
+<h2>台灣公司</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>類型</th>
+<th>代表公司</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>貨櫃航運</td>
+<td>長榮、陽明、萬海</td>
+</tr>
+<tr>
+<td>散裝航運</td>
+<td>慧洋-KY、裕民</td>
+</tr>
+<tr>
+<td>航空（客貨運）</td>
+<td>長榮航、華航</td>
+</tr>
+<tr>
+<td>貨攬／物流</td>
+<td>台驊投控</td>
+</tr>
+</tbody>
+</table></div>
+<h2>美國公司</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>類型</th>
+<th>代表公司</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>快遞物流</td>
+<td>FedEx、UPS</td>
+</tr>
+<tr>
+<td>鐵路貨運</td>
+<td>Union Pacific</td>
+</tr>
+<tr>
+<td>全球貨櫃龍頭（參考）</td>
+<td>Maersk（丹麥）、MSC（未上市，瑞士）</td>
+</tr>
+</tbody>
+</table></div>
+<h2>相關概念</h2>
+<ul>
+<li><a class="wl" data-t="c121" href="#c121">景氣循環與產業輪動</a> — 航運是最極端的循環股教材</li>
+<li><a class="wl" data-t="c111" href="#c111">匯率</a> — 美元計價運費與新台幣營收的匯兌關係</li>
+<li><a class="wl" data-t="c120" href="#c120">產業分析框架</a> — 供給決定循環產業的價格</li>
+</ul>
+<h2>出處來源</h2>
+<ul>
+<li>維基百科「長榮海運」：<a href="https://zh.wikipedia.org/wiki/長榮海運">https://zh.wikipedia.org/wiki/長榮海運</a>（查證 2026-08-01）</li>
+<li>維基百科「波羅的海乾散貨指數」：<a href="https://zh.wikipedia.org/wiki/波羅的海乾散貨指數">https://zh.wikipedia.org/wiki/波羅的海乾散貨指數</a>（查證 2026-08-01）</li>
+</ul></div></details><details class="card" id="c127" data-s="塑化與鋼鐵產業 petrochemical and steel industry 卡片盒 產業分析 傳產與金融"><summary class="card-head"><span class="card-title">塑化與鋼鐵產業<span class="en">Petrochemical and Steel Industry</span></span><span class="card-side"><span class="datechip">08/01</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>白話解釋</h2>
+<ul>
+<li>塑化業把<strong>原油</strong>煉成塑膠原料（乙烯、PVC、PE），鋼鐵業把<strong>鐵礦砂</strong>煉成鋼板鋼筋——都是「買原料、賣加工品」的生意，賺的是<strong>價差</strong>。</li>
+<li>產品規格全球統一（大宗商品），沒有品牌溢價，誰成本低誰贏；報價漲跌直接決定獲利。</li>
+<li><strong>EN</strong>｜Petrochemical firms turn crude oil into plastics; steelmakers turn iron ore into steel. Both buy commodities and sell processed commodities — profit is the spread. Products are standardized, so the low-cost producer wins.</li>
+</ul>
+<h2>生活舉例</h2>
+<ul>
+<li>寶特瓶、水管、輪胎、房子的鋼筋、汽車的鋼板——台塑四寶和中鋼的產品就藏在你每天碰到的東西裡。</li>
+<li>中國房地產不景氣，鋼筋需求大減，中國鋼廠低價外銷，全球鋼價被壓著打——台塑四寶與中鋼近年獲利低迷，主因都指向中國的<strong>產能過剩</strong>。</li>
+<li><strong>EN</strong>｜PET bottles, pipes, rebar, car panels — Formosa Plastics and China Steel products are everywhere in daily life. China's property slump and excess capacity flooded the world with cheap steel and chemicals, crushing margins across Asia.</li>
+</ul>
+<h2>專業補充</h2>
+<ul>
+<li><strong>塑化觀察指標</strong>：乙烯－石腦油價差（Ethylene-Naphtha spread）是獲利領先指標；台塑四寶＝台塑（PVC）、南亞（塑膠加工＋電子材料）、台化（芳香烴）、台塑化（煉油，四寶獲利火車頭）。</li>
+<li><strong>鋼鐵觀察指標</strong>：中國鋼價（螺紋鋼期貨）、鐵礦砂價、中鋼每月盤價漲跌開平——中鋼盤價是台灣下游鋼廠的成本基準。</li>
+<li><strong>循環位置</strong>：兩者都是「過熱期」受惠產業（見 <a class="wl" data-t="c121" href="#c121">景氣循環與產業輪動</a>），與全球製造業 PMI 高度連動。</li>
+<li><strong>長期逆風</strong>：碳費／碳關稅（歐盟 CBAM 首波即納入鋼鐵）、中國產能過剩、ESG 資金迴避——估值中樞長期下移，多以高股息與資產價值支撐股價。</li>
+</ul>
+<h2>台灣公司</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>類型</th>
+<th>代表公司</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>塑化（台塑四寶）</td>
+<td>台塑、南亞、台化、台塑化</td>
+</tr>
+<tr>
+<td>鋼鐵</td>
+<td>中鋼、豐興（電爐）、中鴻</td>
+</tr>
+<tr>
+<td>其他化工</td>
+<td>長春集團（未上市）、台肥</td>
+</tr>
+</tbody>
+</table></div>
+<h2>美國公司</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>類型</th>
+<th>代表公司</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>石油巨頭（上游）</td>
+<td>ExxonMobil、Chevron</td>
+</tr>
+<tr>
+<td>化工</td>
+<td>Dow、LyondellBasell</td>
+</tr>
+<tr>
+<td>鋼鐵</td>
+<td>Nucor（電爐龍頭）、U.S. Steel</td>
+</tr>
+</tbody>
+</table></div>
+<h2>相關概念</h2>
+<ul>
+<li><a class="wl" data-t="c121" href="#c121">景氣循環與產業輪動</a> — 原物料股的循環定位</li>
+<li><a class="wl" data-t="c106" href="#c106">通膨 CPI</a> — 大宗商品價格與通膨互為因果</li>
+<li><a class="wl" data-t="c120" href="#c120">產業分析框架</a> — 成本領先是大宗商品業唯一護城河</li>
+</ul>
+<h2>出處來源</h2>
+<ul>
+<li>維基百科「台塑集團」：<a href="https://zh.wikipedia.org/wiki/台塑關係企業">https://zh.wikipedia.org/wiki/台塑關係企業</a>（查證 2026-08-01）</li>
+<li>維基百科「中國鋼鐵公司」：<a href="https://zh.wikipedia.org/wiki/中國鋼鐵公司">https://zh.wikipedia.org/wiki/中國鋼鐵公司</a>（查證 2026-08-01）</li>
+</ul></div></details><details class="card" id="c128" data-s="消費零售產業 consumer and retail industry 卡片盒 產業分析 傳產與金融"><summary class="card-head"><span class="card-title">消費零售產業<span class="en">Consumer and Retail Industry</span></span><span class="card-side"><span class="datechip">08/01</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>白話解釋</h2>
+<ul>
+<li>消費產業分兩種脾氣：<strong>必需消費</strong>（食品、超商——景氣再差都要吃喝）與<strong>非必需消費</strong>（名牌包、餐廳、旅遊——手頭緊就先砍）。</li>
+<li>必需消費是防禦型資產：獲利穩、配息穩，跌市時相對抗跌，但也很難大漲。</li>
+<li><strong>EN</strong>｜Consumer businesses come in two temperaments: staples (food, convenience stores — needed in any economy) and discretionary (luxury, dining, travel — cut first when budgets tighten). Staples are defensive: steady profits, steady dividends, resilient in downturns.</li>
+</ul>
+<h2>生活舉例</h2>
+<ul>
+<li>不管股市漲跌，你每天還是會走進 7-11 買咖啡——所以統一超的獲利曲線幾乎是一條穩定向上的直線，股價常年享有高本益比。</li>
+<li>反過來，出國旅遊、買 iPhone 新機這種消費，景氣一差就延後——晶華酒店與觀光股的獲利波動遠大於超商。</li>
+<li><strong>EN</strong>｜Whatever the market does, you still buy coffee at 7-Eleven daily — President Chain Store's earnings climb in a nearly straight line and command a premium multiple. Trips abroad and new iPhones get postponed in bad times — hotel earnings swing far more than convenience stores.</li>
+</ul>
+<h2>專業補充</h2>
+<ul>
+<li><strong>關鍵指標</strong>：同店銷售成長（SSSG）、毛利率、展店數；電商看 GMV 與獲利轉正時點。</li>
+<li><strong>通膨兩面刃</strong>：食品廠短期可轉嫁漲價（營收升），但若通膨壓縮實質購買力，量會下滑——觀察「價漲量縮」還是「價量齊揚」。</li>
+<li><strong>台灣特色</strong>：超商密度全球最高，雙雄（統一超、全家）寡占；量販與超市由全聯（未上市）主導。</li>
+<li><strong>美國巨頭邏輯</strong>：Walmart 以規模壓低價格、Costco 靠會員費賺錢（商品幾乎不賺）、Amazon 電商＋廣告＋雲端三引擎——同是零售，商業模式完全不同。</li>
+<li><strong>品牌消費</strong>：可口可樂、麥當勞、P&amp;G 是巴菲特式「特許權」典型——品牌讓消費者願意多付錢，數十年連續配息成長。</li>
+</ul>
+<h2>台灣公司</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>類型</th>
+<th>代表公司</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>超商雙雄</td>
+<td>統一超、全家</td>
+</tr>
+<tr>
+<td>食品集團</td>
+<td>統一、佳格、大成</td>
+</tr>
+<tr>
+<td>美妝生活零售</td>
+<td>寶雅</td>
+</tr>
+<tr>
+<td>觀光餐飲</td>
+<td>晶華、瓦城</td>
+</tr>
+</tbody>
+</table></div>
+<h2>美國公司</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>類型</th>
+<th>代表公司</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>量販零售</td>
+<td>Walmart、Costco、Target</td>
+</tr>
+<tr>
+<td>電商</td>
+<td>Amazon</td>
+</tr>
+<tr>
+<td>品牌食品飲料</td>
+<td>Coca-Cola、PepsiCo、McDonald's</td>
+</tr>
+<tr>
+<td>日用品</td>
+<td>Procter &amp; Gamble</td>
+</tr>
+</tbody>
+</table></div>
+<h2>相關概念</h2>
+<ul>
+<li><a class="wl" data-t="c121" href="#c121">景氣循環與產業輪動</a> — 必需消費是「秋冬」防禦首選</li>
+<li><a class="wl" data-t="c110" href="#c110">美國零售銷售數據</a> — 觀察消費力的總經指標</li>
+<li><a class="wl" data-t="c106" href="#c106">通膨 CPI</a> — 通膨對消費股的雙面影響</li>
+<li><a class="wl" data-t="c120" href="#c120">產業分析框架</a> — 品牌護城河的定價權</li>
+</ul>
+<h2>出處來源</h2>
+<ul>
+<li>維基百科「統一超商」：<a href="https://zh.wikipedia.org/wiki/統一超商">https://zh.wikipedia.org/wiki/統一超商</a>（查證 2026-08-01）</li>
+<li>維基百科「好市多」：<a href="https://zh.wikipedia.org/wiki/好市多">https://zh.wikipedia.org/wiki/好市多</a>（查證 2026-08-01）</li>
+</ul></div></details></div></details><details class="acc-sec"><summary class="acc-sec-head"><span><span class="acc-sec-title">新興產業</span><span class="acc-sub">05.05 新興產業・4張</span></span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="acc-sec-body"><details class="card" id="c129" data-s="電動車產業 electric vehicle industry 卡片盒 產業分析 新興產業"><summary class="card-head"><span class="card-title">電動車產業<span class="en">Electric Vehicle Industry</span></span><span class="card-side"><span class="datechip">08/01</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>白話解釋</h2>
+<ul>
+<li>電動車是「裝了輪子的大手機」：核心從引擎變速箱，換成<strong>電池＋馬達＋電控</strong>三電系統，再加上一台強大的車用電腦。</li>
+<li>汽車的價值重心因此從機械轉向<strong>電子與軟體</strong>——這正是台灣電子供應鏈切入汽車業的歷史機會。</li>
+<li><strong>EN</strong>｜An EV is a big smartphone on wheels: engine and gearbox are replaced by battery, motor, and power electronics, plus a powerful onboard computer. Value shifts from mechanics to electronics and software — Taiwan's opening into the auto industry.</li>
+</ul>
+<h2>生活舉例</h2>
+<ul>
+<li>一台特斯拉的電池成本約占整車三成，等於「買車一半是在買電池」；充電樁、車用鏡頭、車用面板則有大量台廠身影。</li>
+<li>燃油車零件約三萬個，電動車只要約一萬多個——傳統引擎供應鏈（火星塞、油箱、排氣管）會逐步消失，這是典型的<strong>破壞式創新</strong>。</li>
+<li><strong>EN</strong>｜A Tesla's battery is roughly a third of vehicle cost. An EV needs far fewer parts than a gas car — the traditional engine supply chain gradually disappears. Classic disruptive innovation.</li>
+</ul>
+<h2>專業補充</h2>
+<ul>
+<li><strong>競爭格局</strong>：特斯拉與中國比亞迪為全球兩強；比亞迪靠垂直整合（自產電池）以低價橫掃新興市場；傳統車廠（豐田、福斯）轉型步伐分歧，豐田押油電混合過渡。</li>
+<li><strong>電池是勝負手</strong>：全球動力電池由寧德時代（CATL）、比亞迪、LG、Panasonic 寡占；固態電池是下一代競賽。</li>
+<li><strong>台灣切入點</strong>：不造整車、專攻零組件——電源與充電（台達電）、線束（貿聯-KY）、減速齒輪（和大）、車用鏡頭（大立光有布局）；鴻海以 MIH 平台＋代工模式（為納智捷、美國新創代工）挑戰「汽車界的台積電」定位。</li>
+<li><strong>政策變數</strong>：各國補貼退場時點、美國對中國電動車關稅、歐盟 2035 禁售燃油車目標——政策是這個產業最大的外生變數。</li>
+<li><strong>延伸戰場</strong>：自動駕駛（特斯拉 FSD、Waymo）與機器人計程車，決定十年後的產業終局。</li>
+</ul>
+<h2>台灣公司</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>環節</th>
+<th>代表公司</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>電源／充電／電控</td>
+<td>台達電、光寶科</td>
+</tr>
+<tr>
+<td>線束／連接</td>
+<td>貿聯-KY、健和興</td>
+</tr>
+<tr>
+<td>傳動零件</td>
+<td>和大、智伸科</td>
+</tr>
+<tr>
+<td>整車平台／代工</td>
+<td>鴻海（MIH）、裕隆</td>
+</tr>
+</tbody>
+</table></div>
+<h2>美國公司</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>環節</th>
+<th>代表公司</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>整車</td>
+<td>Tesla、GM、Ford、Rivian</td>
+</tr>
+<tr>
+<td>自駕</td>
+<td>Waymo（Alphabet 旗下）、Tesla</td>
+</tr>
+<tr>
+<td>車用晶片</td>
+<td>NVIDIA（自駕運算）、ON Semi、Texas Instruments</td>
+</tr>
+</tbody>
+</table></div>
+<h2>相關概念</h2>
+<ul>
+<li><a class="wl" data-t="c130" href="#c130">綠能產業</a> — 電動車與再生能源同屬能源轉型</li>
+<li><a class="wl" data-t="c122" href="#c122">半導體產業鏈</a> — 車用晶片含量持續上升</li>
+<li><a class="wl" data-t="c120" href="#c120">產業分析框架</a> — 破壞式創新下的供應鏈重組</li>
+<li><a class="wl" data-t="c123" href="#c123">AI伺服器供應鏈</a> — 自駕訓練同樣仰賴 AI 算力</li>
+</ul>
+<h2>出處來源</h2>
+<ul>
+<li>維基百科「電動汽車」：<a href="https://zh.wikipedia.org/wiki/電動汽車">https://zh.wikipedia.org/wiki/電動汽車</a>（查證 2026-08-01）</li>
+<li>維基百科「特斯拉」：<a href="https://zh.wikipedia.org/wiki/特斯拉_(公司)">https://zh.wikipedia.org/wiki/特斯拉_(公司)</a>（查證 2026-08-01）</li>
+</ul></div></details><details class="card" id="c130" data-s="綠能產業 green energy industry 卡片盒 產業分析 新興產業"><summary class="card-head"><span class="card-title">綠能產業<span class="en">Green Energy Industry</span></span><span class="card-side"><span class="datechip">08/01</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>白話解釋</h2>
+<ul>
+<li>綠能就是「不燒東西的發電」：太陽能、風力（台灣主推<strong>離岸風電</strong>）、加上把電存起來的<strong>儲能</strong>系統。</li>
+<li>台灣的特殊剛需：科技大廠出口歐美必須交出「使用綠電」的成績單（RE100 承諾），<strong>綠電在台灣是供不應求的稀缺商品</strong>。</li>
+<li><strong>EN</strong>｜Green energy is electricity without combustion: solar, wind (Taiwan bets on offshore wind), plus storage. Taiwan's twist: exporters must prove green-power usage under RE100 pledges, making green electricity a scarce, oversubscribed commodity.</li>
+</ul>
+<h2>生活舉例</h2>
+<ul>
+<li>台積電是全台最大綠電買家，把離岸風場未來多年的發電量早早包下——小廠想買綠電還買不到。</li>
+<li>台中外海的風機一支比 101 大樓的一半還高，基礎的鋼構水下基樁就是世紀鋼的生意。</li>
+<li><strong>EN</strong>｜TSMC is Taiwan's biggest green-power buyer, locking up offshore wind output years ahead — smaller firms struggle to buy any. Those turbines off Taichung stand taller than half of Taipei 101; their steel foundations are Century Iron &amp; Steel's business.</li>
+</ul>
+<h2>專業補充</h2>
+<ul>
+<li><strong>離岸風電三階段</strong>：示範（2019 前）→ 潛力場址（5.7GW，2025 年前後陸續併網）→ 區塊開發（3-1、3-2 期招標）；開發商以歐洲系（沃旭 Ørsted、CIP）為主，台廠做本地供應鏈（水下基礎、塔架、海事工程）。</li>
+<li><strong>太陽能</strong>：台灣模組廠（元晶、茂迪）長期受中國低價品壓制，靠內需政策市場存活；美國以 First Solar 受惠本土製造補貼（IRA）。</li>
+<li><strong>儲能與電網</strong>：再生能源占比升高後，「間歇性」問題讓儲能（AFC 調頻備轉）與強韌電網（台電強化電網計畫）成為第二波受惠者——中興電、華城、士電的重電訂單大爆發即由此而來。</li>
+<li><strong>估值提醒</strong>：綠能開發案是「前期重資本、回收期長」的類公用事業模式，看 IRR 與購售電合約（PPA）價格，不適用科技股估值。</li>
+<li><strong>AI 加乘</strong>：資料中心耗電暴增，讓「電力」從防禦題材變成 AI 概念股的一環（美國公用事業與核電股 2024 年後大幅重評價）。</li>
+</ul>
+<h2>台灣公司</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>環節</th>
+<th>代表公司</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>風電鋼構／基樁</td>
+<td>世紀鋼</td>
+</tr>
+<tr>
+<td>重電／電網設備</td>
+<td>中興電、華城、士電</td>
+</tr>
+<tr>
+<td>太陽能</td>
+<td>元晶、茂迪</td>
+</tr>
+<tr>
+<td>綠電開發／售電</td>
+<td>森崴能源、雲豹能源</td>
+</tr>
+</tbody>
+</table></div>
+<h2>美國公司</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>環節</th>
+<th>代表公司</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>再生能源公用事業</td>
+<td>NextEra Energy</td>
+</tr>
+<tr>
+<td>太陽能製造</td>
+<td>First Solar</td>
+</tr>
+<tr>
+<td>逆變器／儲能</td>
+<td>Enphase、Tesla（Megapack）</td>
+</tr>
+<tr>
+<td>核能（AI 電力題材）</td>
+<td>Constellation Energy</td>
+</tr>
+</tbody>
+</table></div>
+<h2>相關概念</h2>
+<ul>
+<li><a class="wl" data-t="c129" href="#c129">電動車產業</a> — 能源轉型的另一半</li>
+<li><a class="wl" data-t="c123" href="#c123">AI伺服器供應鏈</a> — 資料中心用電是新需求引擎</li>
+<li><a class="wl" data-t="c120" href="#c120">產業分析框架</a> — 類公用事業的估值邏輯</li>
+</ul>
+<h2>出處來源</h2>
+<ul>
+<li>維基百科「離岸風力發電」：<a href="https://zh.wikipedia.org/wiki/離岸風力發電">https://zh.wikipedia.org/wiki/離岸風力發電</a>（查證 2026-08-01）</li>
+<li>經濟部能源署再生能源資訊網：<a href="https://www.re.org.tw">https://www.re.org.tw</a>（查證 2026-08-01）</li>
+</ul></div></details><details class="card" id="c131" data-s="生技醫療產業 biotech and healthcare industry 卡片盒 產業分析 新興產業"><summary class="card-head"><span class="card-title">生技醫療產業<span class="en">Biotech and Healthcare Industry</span></span><span class="card-side"><span class="datechip">08/01</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>白話解釋</h2>
+<ul>
+<li>生技醫療分四塊：<strong>新藥開發</strong>（十年燒錢賭一顆藥）、<strong>學名藥／CDMO</strong>（幫別人代工生產藥品）、<strong>醫材</strong>（器械耗材）、<strong>醫療服務</strong>（醫院保險）。</li>
+<li>新藥公司像「科學樂透」：臨床試驗成功股價翻倍、失敗腰斬；CDMO 和醫材則是穩定收租的生意。</li>
+<li><strong>EN</strong>｜Healthcare splits into four blocks: new-drug development (a decade-long, cash-burning bet), generics/CDMO (contract manufacturing), devices, and services. Drug developers are science lotteries — trial success doubles the stock, failure halves it; CDMO and devices collect steady rent.</li>
+</ul>
+<h2>生活舉例</h2>
+<ul>
+<li>減肥針（GLP-1 瘦瘦針）讓禮來與諾和諾德市值暴衝，一度成為歐美市值最大藥廠——一顆成功的藥能改寫整個產業排名。</li>
+<li>台灣的保瑞不研發新藥，專門收購藥廠幫國際大廠<strong>代工生產</strong>，商業模式像「製藥界的台積電」，獲利遠比賭新藥的同業穩定。</li>
+<li><strong>EN</strong>｜GLP-1 weight-loss drugs sent Eli Lilly and Novo Nordisk to the top of pharma market caps — one successful drug rewrites the league table. Taiwan's Bora Pharmaceuticals skips R&amp;D and manufactures for global brands, a "TSMC of pharma" model with far steadier profits.</li>
+</ul>
+<h2>專業補充</h2>
+<ul>
+<li><strong>新藥估值</strong>：看臨床階段（Phase 1→3 成功率遞增）、適應症市場規模、授權金（milestone）結構；未獲利公司用 rNPV（風險調整淨現值），本益比無意義。</li>
+<li><strong>台灣賽道選擇</strong>：新藥（藥華藥的真性紅血球增多症藥物 P1101 已在美銷售、合一的糖尿病足潰瘍新藥）、CDMO（保瑞、台康）、醫材（視陽隱形眼鏡、邦特）；共同罩門是內需市場小，成敗看能否打進美國市場。</li>
+<li><strong>美國體系</strong>：藥廠（LLY、JNJ、PFE、MRK）＋保險與服務（UNH）＋器械（Medtronic、ISRG 手術機器人）＋工具（Thermo Fisher）——完整生態系全球獨有。</li>
+<li><strong>政策風險</strong>：美國藥價談判（IRA 條款）、FDA 審查、台灣健保砍價——政策是這個產業僅次於科學的第二大變數。</li>
+<li><strong>防禦屬性</strong>：醫療需求不隨景氣消失，屬 <a class="wl" data-t="c121" href="#c121">景氣循環與產業輪動</a> 中的「秋冬」配置。</li>
+</ul>
+<h2>台灣公司</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>類型</th>
+<th>代表公司</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>新藥</td>
+<td>藥華藥、合一、智擎</td>
+</tr>
+<tr>
+<td>CDMO／學名藥</td>
+<td>保瑞、台康生技、美時</td>
+</tr>
+<tr>
+<td>醫材</td>
+<td>視陽、邦特、太醫</td>
+</tr>
+<tr>
+<td>通路／服務</td>
+<td>大樹（藥局連鎖）</td>
+</tr>
+</tbody>
+</table></div>
+<h2>美國公司</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>類型</th>
+<th>代表公司</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>大型藥廠</td>
+<td>Eli Lilly、Johnson &amp; Johnson、Pfizer、Merck</td>
+</tr>
+<tr>
+<td>醫療保險服務</td>
+<td>UnitedHealth</td>
+</tr>
+<tr>
+<td>醫療器械</td>
+<td>Intuitive Surgical、Medtronic（愛爾蘭註冊）</td>
+</tr>
+<tr>
+<td>生技</td>
+<td>Amgen、Vertex</td>
+</tr>
+</tbody>
+</table></div>
+<h2>相關概念</h2>
+<ul>
+<li><a class="wl" data-t="c121" href="#c121">景氣循環與產業輪動</a> — 醫療的防禦型定位</li>
+<li><a class="wl" data-t="c120" href="#c120">產業分析框架</a> — 專利即護城河的極致案例</li>
+<li><a class="wl" data-t="c134" href="#c134">美國重要公司總覽</a> — 禮來與聯合健康的市值地位</li>
+</ul>
+<h2>出處來源</h2>
+<ul>
+<li>維基百科「禮來公司」：<a href="https://zh.wikipedia.org/wiki/禮來公司">https://zh.wikipedia.org/wiki/禮來公司</a>（查證 2026-08-01）</li>
+<li>藥華醫藥官方網站：<a href="https://www.pharmaessentia.com">https://www.pharmaessentia.com</a>（查證 2026-08-01）</li>
+</ul></div></details><details class="card" id="c132" data-s="軍工航太產業 defense and aerospace industry 卡片盒 產業分析 新興產業"><summary class="card-head"><span class="card-title">軍工航太產業<span class="en">Defense and Aerospace Industry</span></span><span class="card-side"><span class="datechip">08/01</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>白話解釋</h2>
+<ul>
+<li>軍工業的客戶幾乎只有一個：<strong>政府</strong>。訂單跟著國防預算走，一簽就是十年起跳，景氣好壞影響不大，但<strong>地緣政治緊張就是它的多頭</strong>。</li>
+<li>台灣版本是「<strong>國防自主</strong>」政策：自己造潛艦、教練機、無人機，把預算留給本土供應鏈。</li>
+<li><strong>EN</strong>｜Defense contractors have essentially one customer: the government. Orders follow defense budgets, run a decade or more, and ignore the business cycle — geopolitical tension is their bull market. Taiwan's version is the indigenous defense policy: build submarines, trainers, and drones at home.</li>
+</ul>
+<h2>生活舉例</h2>
+<ul>
+<li>俄烏戰爭後歐洲各國急著把國防預算拉到 GDP 2% 以上，美國軍工五巨頭訂單能見度排到十年後。</li>
+<li>台灣的「勇鷹」教練機由漢翔組裝、「海鯤號」潛艦由台船建造——政府預算直接變成這些公司的營收。</li>
+<li><strong>EN</strong>｜After the Ukraine war, European countries rushed defense budgets past 2% of GDP, giving US primes a decade of backlog. Taiwan's Brave Eagle trainer is built by AIDC and the Hai Kun submarine by CSBC — government budgets become their revenue.</li>
+</ul>
+<h2>專業補充</h2>
+<ul>
+<li><strong>商業模式</strong>：成本加成（cost-plus）或固定價格合約；看<strong>未交付訂單（backlog）</strong>而非單季營收，backlog／年營收比是能見度指標。</li>
+<li><strong>美國五巨頭</strong>：Lockheed Martin（F-35）、RTX（飛彈與引擎）、Northrop Grumman（B-21 轟炸機）、General Dynamics（潛艦）、Boeing（軍民兩用，民航拖累）。</li>
+<li><strong>新型態戰爭</strong>：無人機（低成本消耗戰）、AI 指管（Palantir 竄起）、衛星星鏈（SpaceX 未上市）——傳統大平台與新創的預算爭奪是十年主軸。</li>
+<li><strong>台灣鏈</strong>：漢翔（航太組裝＋國機國造）、台船（潛艦國造）、龍德造船（快艇）、雷虎（無人機）、中信造船；另有航太民用件（駐龍、豐達科打進波音空巴供應鏈）。</li>
+<li><strong>風險</strong>：和平協議或預算刪減即利空；台灣軍工股波動極大，常隨兩岸新聞暴漲暴跌，<strong>題材性遠高於獲利兌現</strong>，須嚴格檢視實際接單。</li>
+</ul>
+<h2>台灣公司</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>類型</th>
+<th>代表公司</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>航太／國機國造</td>
+<td>漢翔、駐龍、豐達科</td>
+</tr>
+<tr>
+<td>造艦</td>
+<td>台船、龍德造船</td>
+</tr>
+<tr>
+<td>無人機</td>
+<td>雷虎、經緯航太</td>
+</tr>
+</tbody>
+</table></div>
+<h2>美國公司</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>類型</th>
+<th>代表公司</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>國防主承包商</td>
+<td>Lockheed Martin、RTX、Northrop Grumman、General Dynamics</td>
+</tr>
+<tr>
+<td>軍民航太</td>
+<td>Boeing</td>
+</tr>
+<tr>
+<td>國防軟體／AI</td>
+<td>Palantir</td>
+</tr>
+</tbody>
+</table></div>
+<h2>相關概念</h2>
+<ul>
+<li><a class="wl" data-t="c120" href="#c120">產業分析框架</a> — 單一買家（政府）市場的特殊結構</li>
+<li><a class="wl" data-t="c121" href="#c121">景氣循環與產業輪動</a> — 軍工不隨景氣循環的例外屬性</li>
+<li><a class="wl" data-t="c122" href="#c122">半導體產業鏈</a> — 軍規晶片與出口管制的交會點</li>
+</ul>
+<h2>出處來源</h2>
+<ul>
+<li>維基百科「漢翔航空工業」：<a href="https://zh.wikipedia.org/wiki/漢翔航空工業">https://zh.wikipedia.org/wiki/漢翔航空工業</a>（查證 2026-08-01）</li>
+<li>維基百科「洛克希德·馬丁」：<a href="https://zh.wikipedia.org/wiki/洛克希德·馬丁">https://zh.wikipedia.org/wiki/洛克希德·馬丁</a>（查證 2026-08-01）</li>
+</ul></div></details></div></details><details class="acc-sec"><summary class="acc-sec-head"><span><span class="acc-sec-title">重要公司</span><span class="acc-sub">05.06 重要公司・2張</span></span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="acc-sec-body"><details class="card" id="c133" data-s="台灣重要公司總覽 taiwan key companies 卡片盒 產業分析 重要公司"><summary class="card-head"><span class="card-title">台灣重要公司總覽<span class="en">Taiwan Key Companies</span></span><span class="card-side"><span class="datechip">08/01</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>白話解釋</h2>
+<ul>
+<li>台股是「一超多強」：台積電一家就占大盤權重三成以上，它打噴嚏、加權指數就感冒。</li>
+<li>其餘權值股集中在<strong>電子五哥（AI 組裝）、IC 設計、金控、傳產龍頭</strong>四大塊——認識前二十大，就掌握台股七成的脈動。</li>
+<li><strong>EN</strong>｜Taiwan's market is "one superpower, many strongmen": TSMC alone is over thirty percent of the index. Know the top twenty names — AI assemblers, chip designers, financial holdings, old-economy leaders — and you grasp most of the market's pulse.</li>
+</ul>
+<h2>生活舉例</h2>
+<ul>
+<li>有時新聞說「台股大漲三百點」，打開自己的持股卻沒動——很可能那天只是台積電一檔在漲，指數失真是台股常態。</li>
+<li>0050 這類市值型 ETF 買的就是這張名單，等於「一鍵打包台灣國家隊」。</li>
+<li><strong>EN</strong>｜Sometimes the index jumps three hundred points while your stocks sit still — often it's just TSMC moving. Market-cap ETFs like 0050 simply buy this list: Team Taiwan in one click.</li>
+</ul>
+<h2>專業補充</h2>
+<p>市值前段班公司與角色（依 2026 年初市值級距，順序會隨股價變動，查證以臺灣證券交易所為準）：</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>產業角色</th>
+<th>一句話定位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>台積電</td>
+<td>晶圓代工</td>
+<td>全球先進製程獨占，台股權重逾三成</td>
+</tr>
+<tr>
+<td>鴻海</td>
+<td>電子組裝</td>
+<td>iPhone＋AI 伺服器雙引擎</td>
+</tr>
+<tr>
+<td>聯發科</td>
+<td>IC 設計</td>
+<td>手機 SoC 全球出貨王，轉攻 ASIC</td>
+</tr>
+<tr>
+<td>台達電</td>
+<td>電源／散熱</td>
+<td>AI 電源與電動車雙題材</td>
+</tr>
+<tr>
+<td>廣達</td>
+<td>伺服器代工</td>
+<td>AI 伺服器主力組裝廠</td>
+</tr>
+<tr>
+<td>富邦金／國泰金</td>
+<td>壽險型金控</td>
+<td>金融股市值雙雄</td>
+</tr>
+<tr>
+<td>中信金</td>
+<td>銀行型金控</td>
+<td>消金與財管領先</td>
+</tr>
+<tr>
+<td>日月光投控</td>
+<td>封測</td>
+<td>全球最大委外封測</td>
+</tr>
+<tr>
+<td>中華電</td>
+<td>電信</td>
+<td>最大定存概念股</td>
+</tr>
+<tr>
+<td>長榮</td>
+<td>貨櫃航運</td>
+<td>傳產循環股代表</td>
+</tr>
+<tr>
+<td>統一</td>
+<td>食品零售</td>
+<td>民生消費龍頭</td>
+</tr>
+<tr>
+<td>台塑四寶</td>
+<td>塑化</td>
+<td>舊經濟集團代表（市值已大幅縮水）</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>結構觀察</strong>：前十大裡電子占七席——台股本質是「全球科技景氣的槓桿」；金融與傳產提供防禦與股息。</li>
+<li><strong>與美股的連動</strong>：台積電 ADR、費城半導體指數（SOX）是台股每日開盤前的兩個先行指標。</li>
+<li><strong>集中度風險</strong>：單一公司權重過高，指數投資人實質上是在重押半導體——資產配置時要把這一點算進去。</li>
+</ul>
+<h2>相關概念</h2>
+<ul>
+<li><a class="wl" data-t="c122" href="#c122">半導體產業鏈</a> — 台股權值的核心賽道</li>
+<li><a class="wl" data-t="c123" href="#c123">AI伺服器供應鏈</a> — 電子五哥的成長引擎</li>
+<li><a class="wl" data-t="c125" href="#c125">金融產業</a> — 金控股的獲利邏輯</li>
+<li><a class="wl" data-t="c134" href="#c134">美國重要公司總覽</a> — 對照組：美股七巨頭</li>
+<li><a class="wl" data-t="c116" href="#c116">手機SoC</a> — 聯發科的主戰場</li>
+</ul>
+<h2>出處來源</h2>
+<ul>
+<li>臺灣證券交易所上市公司市值排行：<a href="https://www.twse.com.tw/zh/trading/statistics/twtavu.html">https://www.twse.com.tw/zh/trading/statistics/twtavu.html</a>（查證 2026-08-01）</li>
+<li>維基百科「台灣積體電路製造」：<a href="https://zh.wikipedia.org/wiki/台灣積體電路製造">https://zh.wikipedia.org/wiki/台灣積體電路製造</a>（查證 2026-08-01）</li>
+</ul></div></details><details class="card" id="c134" data-s="美國重要公司總覽 us key companies 卡片盒 產業分析 重要公司"><summary class="card-head"><span class="card-title">美國重要公司總覽<span class="en">US Key Companies</span></span><span class="card-side"><span class="datechip">08/01</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>白話解釋</h2>
+<ul>
+<li>美股由「<strong>七巨頭（Magnificent Seven）</strong>」領軍：蘋果、微軟、輝達、Google、亞馬遜、Meta、特斯拉——七家合計約占 S&amp;P 500 三成權重。</li>
+<li>七巨頭之外，美股的深度在於<strong>每個產業都有世界級龍頭</strong>：藥有禮來、金融有摩根大通、消費有沃爾瑪——這是美股與其他市場最大的差別。</li>
+<li><strong>EN</strong>｜The US market is led by the Magnificent Seven — Apple, Microsoft, NVIDIA, Alphabet, Amazon, Meta, Tesla — roughly thirty percent of the S&amp;P 500. Beyond them, America's depth is a world-class leader in every industry, which is what sets it apart.</li>
+</ul>
+<h2>生活舉例</h2>
+<ul>
+<li>你一天的生活：iPhone 鬧鐘（蘋果）→ 上班用 Office（微軟）→ Google 查資料 → 下單亞馬遜 → 滑 IG（Meta）——你天天在幫七巨頭創造營收，卻不一定持有它們的股票。</li>
+<li>買一檔 S&amp;P 500 ETF，前十大持股幾乎就是這張名單。</li>
+<li><strong>EN</strong>｜Your day: iPhone alarm, Office at work, Google searches, Amazon orders, Instagram scrolling — you generate revenue for the Seven daily whether or not you own them. Buy an S&amp;P 500 ETF and its top holdings are exactly this list.</li>
+</ul>
+<h2>專業補充</h2>
+<p>七巨頭與各產業龍頭（依 2026 年初市值概況，順序隨股價變動，查證以交易所收盤資料為準）：</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>產業</th>
+<th>一句話定位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NVIDIA</td>
+<td>半導體</td>
+<td>AI 晶片獨占，本輪牛市總龍頭</td>
+</tr>
+<tr>
+<td>Microsoft</td>
+<td>軟體雲端</td>
+<td>Azure＋Copilot，企業 AI 收費最順</td>
+</tr>
+<tr>
+<td>Apple</td>
+<td>消費電子</td>
+<td>全球最強品牌生態系與現金流</td>
+</tr>
+<tr>
+<td>Alphabet</td>
+<td>網路廣告</td>
+<td>搜尋＋YouTube＋Gemini＋Waymo</td>
+</tr>
+<tr>
+<td>Amazon</td>
+<td>電商雲端</td>
+<td>AWS 是獲利主體，電商是流量</td>
+</tr>
+<tr>
+<td>Meta</td>
+<td>社群廣告</td>
+<td>IG／FB 廣告機器，AI 開源路線</td>
+</tr>
+<tr>
+<td>Tesla</td>
+<td>電動車</td>
+<td>電車＋自駕＋機器人的故事股</td>
+</tr>
+<tr>
+<td>Broadcom</td>
+<td>半導體</td>
+<td>ASIC＋軟體併購，隱形巨頭</td>
+</tr>
+<tr>
+<td>Eli Lilly</td>
+<td>製藥</td>
+<td>減肥藥霸主，醫療市值王</td>
+</tr>
+<tr>
+<td>JPMorgan</td>
+<td>金融</td>
+<td>全球系統重要性銀行之首</td>
+</tr>
+<tr>
+<td>Berkshire Hathaway</td>
+<td>控股</td>
+<td>巴菲特旗艦，防禦型壓艙石</td>
+</tr>
+<tr>
+<td>Walmart</td>
+<td>零售</td>
+<td>全球營收最大企業</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>獲利集中</strong>：S&amp;P 500 的盈餘成長近年大半由七巨頭貢獻，「其餘 493 家」成長平庸——判斷美股估值時要拆開看。</li>
+<li><strong>資本支出軍備賽</strong>：微軟、Google、亞馬遜、Meta 的年度 CapEx 合計數千億美元投入 AI 基建，直接餵養台灣供應鏈（見 <a class="wl" data-t="c123" href="#c123">AI伺服器供應鏈</a>）。</li>
+<li><strong>反壟斷風險</strong>：Google、Meta、Apple、Amazon 各自面對美歐反壟斷訴訟，是七巨頭共同的制度性風險。</li>
+</ul>
+<h2>相關概念</h2>
+<ul>
+<li><a class="wl" data-t="c133" href="#c133">台灣重要公司總覽</a> — 對照組：台股權值結構</li>
+<li><a class="wl" data-t="c124" href="#c124">軟體與雲端產業</a> — 七巨頭中五家的主業</li>
+<li><a class="wl" data-t="c123" href="#c123">AI伺服器供應鏈</a> — 美國需求、台灣供給的連結</li>
+<li><a class="wl" data-t="c122" href="#c122">半導體產業鏈</a> — NVIDIA 與 Broadcom 的賽道</li>
+</ul>
+<h2>出處來源</h2>
+<ul>
+<li>維基百科「Magnificent Seven」：<a href="https://en.wikipedia.org/wiki/Magnificent_Seven_(stocks)">https://en.wikipedia.org/wiki/Magnificent_Seven_(stocks)</a>（查證 2026-08-01）</li>
+<li>維基百科「S&amp;P 500 成分股列表」：<a href="https://en.wikipedia.org/wiki/List_of_S%26P_500_companies">https://en.wikipedia.org/wiki/List_of_S%26P_500_companies</a>（查證 2026-08-01）</li>
+</ul></div></details></div></details></section><section class="panel" data-tab="07"><details class="acc-sec" open><summary class="acc-sec-head"><span><span class="acc-sec-title">知識方法</span><span class="acc-sub">07.01 知識管理方法論・7張</span></span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="acc-sec-body"><details class="card" id="c135" data-s="zettelkasten 卡片盒系統 slip box 卡片盒 知識管理 zettelkasten 知識管理方法論"><summary class="card-head"><span class="card-title">Zettelkasten 卡片盒系統<span class="en">Slip Box</span></span><span class="card-side"><span class="datechip">06/08</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>定義</h2>
 <p>由德國社會學家 Niklas Luhmann（1927–1998）發展的「卡片盒筆記法」，核心是以「想法連結」取代「分類歸檔」：每張卡片記錄一個原子想法，各卡片之間以雙向連結形成有機知識網絡，讓思想自然發展而非被預設分類框架限制。</p>
 <h2>延伸說明</h2>
 <p><strong>Luhmann 的成就</strong>：Luhmann 一生出版超過 70 本書、400 篇文章，其卡片盒有近 90,000 張卡，被許多研究者認為他的成就源自這套系統而非天賦異稟。</p>
@@ -14210,17 +15391,17 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 - 讀書/學習 → 文獻筆記 → 精化為永久筆記 → 加入卡片盒並建立連結 → 主題自然從密集連結的卡片群浮現</p>
 <h2>相關概念</h2>
 <ul>
-<li><a class="wl" data-t="c121" href="#c121">精化寫作法</a> — 卡片盒的核心筆記技術</li>
-<li><a class="wl" data-t="c122" href="#c122">原子筆記</a> — 每張卡只寫一個想法的原則</li>
-<li><a class="wl" data-t="c123" href="#c123">由下往上筆記法</a> — 底部思維的實踐方式</li>
-<li><a class="wl" data-t="c125" href="#c125">第二大腦 外部知識系統</a> — 卡片盒作為外部認知延伸</li>
-<li><a class="wl" data-t="c124" href="#c124">三大認知限制資源</a> — 為什麼需要外部系統</li>
+<li><a class="wl" data-t="c136" href="#c136">精化寫作法</a> — 卡片盒的核心筆記技術</li>
+<li><a class="wl" data-t="c137" href="#c137">原子筆記</a> — 每張卡只寫一個想法的原則</li>
+<li><a class="wl" data-t="c138" href="#c138">由下往上筆記法</a> — 底部思維的實踐方式</li>
+<li><a class="wl" data-t="c140" href="#c140">第二大腦 外部知識系統</a> — 卡片盒作為外部認知延伸</li>
+<li><a class="wl" data-t="c139" href="#c139">三大認知限制資源</a> — 為什麼需要外部系統</li>
 </ul>
 <h2>出處／可驗證來源</h2>
 <ul>
 <li>Ahrens, Sönke. <em>How to Take Smart Notes</em>. 2017（第二版 2022）。（ISBN 待查）</li>
 <li>YouTube 影片：「This Book Changed How I Read」<a href="https://youtu.be/IgCPb3PnW5Y">https://youtu.be/IgCPb3PnW5Y</a>（整理日 2026-06-20）</li>
-</ul></div></details><details class="card" id="c121" data-s="精化寫作法 elaboration 卡片盒 知識管理 學習方法"><summary class="card-head"><span class="card-title">精化寫作法<span class="en">Elaboration</span></span><span class="card-side"><span class="datechip">06/20</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h1>精化寫作法（Elaboration）</h1>
+</ul></div></details><details class="card" id="c136" data-s="精化寫作法 elaboration 卡片盒 知識管理 學習方法 知識管理方法論"><summary class="card-head"><span class="card-title">精化寫作法<span class="en">Elaboration</span></span><span class="card-side"><span class="datechip">06/08</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h1>精化寫作法（Elaboration）</h1>
 <h2>定義</h2>
 <p>閱讀或學習時，不抄原句、不複製引言，而是用<strong>自己的話</strong>重新表達想法，並主動思考「這個概念如何與我已知的事物連結、對比或延伸」。精化本身就是思考的過程，而非思考之後的記錄。</p>
 <h2>延伸說明</h2>
@@ -14239,15 +15420,15 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 - 每次回憶時，記憶的理解層次也會隨著新連結而更新（記憶不是靜態的）</p>
 <h2>相關概念</h2>
 <ul>
-<li><a class="wl" data-t="c120" href="#c120">Zettelkasten 卡片盒系統</a> — 精化是寫永久筆記的核心操作</li>
-<li><a class="wl" data-t="c122" href="#c122">原子筆記</a> — 精化的成果：一個想法一張卡</li>
-<li><a class="wl" data-t="c124" href="#c124">三大認知限制資源</a> — 精化幫助將知識從短期記憶轉移至外部系統</li>
+<li><a class="wl" data-t="c135" href="#c135">Zettelkasten 卡片盒系統</a> — 精化是寫永久筆記的核心操作</li>
+<li><a class="wl" data-t="c137" href="#c137">原子筆記</a> — 精化的成果：一個想法一張卡</li>
+<li><a class="wl" data-t="c139" href="#c139">三大認知限制資源</a> — 精化幫助將知識從短期記憶轉移至外部系統</li>
 </ul>
 <h2>出處／可驗證來源</h2>
 <ul>
 <li>Ahrens, Sönke. <em>How to Take Smart Notes</em>. 2017（第二版 2022）。（ISBN 待查）</li>
 <li>YouTube 影片：「This Book Changed How I Read」<a href="https://youtu.be/IgCPb3PnW5Y">https://youtu.be/IgCPb3PnW5Y</a>（整理日 2026-06-20）</li>
-</ul></div></details><details class="card" id="c122" data-s="原子筆記 atomic notes 卡片盒 知識管理 學習方法"><summary class="card-head"><span class="card-title">原子筆記<span class="en">Atomic Notes</span></span><span class="card-side"><span class="datechip">06/20</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h1>原子筆記（Atomic Notes）</h1>
+</ul></div></details><details class="card" id="c137" data-s="原子筆記 atomic notes 卡片盒 知識管理 學習方法 知識管理方法論"><summary class="card-head"><span class="card-title">原子筆記<span class="en">Atomic Notes</span></span><span class="card-side"><span class="datechip">06/08</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h1>原子筆記（Atomic Notes）</h1>
 <h2>定義</h2>
 <p>每張卡片只記錄<strong>一個完整的想法</strong>，且這個想法要能獨立被理解，不依賴前後文。Luhmann 強迫自己每張卡只寫一個概念，保持極度精簡，目的是讓卡片可以在不同脈絡中自由組合和連結。</p>
 <h2>延伸說明</h2>
@@ -14273,15 +15454,15 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 5. 建立與相關卡的連結</p>
 <h2>相關概念</h2>
 <ul>
-<li><a class="wl" data-t="c120" href="#c120">Zettelkasten 卡片盒系統</a> — 原子筆記是卡片盒的基本單元</li>
-<li><a class="wl" data-t="c121" href="#c121">精化寫作法</a> — 精化是創造原子筆記的過程</li>
-<li><a class="wl" data-t="c123" href="#c123">由下往上筆記法</a> — 原子卡片積累後主題自然浮現</li>
+<li><a class="wl" data-t="c135" href="#c135">Zettelkasten 卡片盒系統</a> — 原子筆記是卡片盒的基本單元</li>
+<li><a class="wl" data-t="c136" href="#c136">精化寫作法</a> — 精化是創造原子筆記的過程</li>
+<li><a class="wl" data-t="c138" href="#c138">由下往上筆記法</a> — 原子卡片積累後主題自然浮現</li>
 </ul>
 <h2>出處／可驗證來源</h2>
 <ul>
 <li>Ahrens, Sönke. <em>How to Take Smart Notes</em>. 2017（第二版 2022）。（ISBN 待查）</li>
 <li>YouTube 影片：「This Book Changed How I Read」<a href="https://youtu.be/IgCPb3PnW5Y">https://youtu.be/IgCPb3PnW5Y</a>（整理日 2026-06-20）</li>
-</ul></div></details><details class="card" id="c123" data-s="由下往上筆記法 bottom-up notes 卡片盒 知識管理 學習方法"><summary class="card-head"><span class="card-title">由下往上筆記法<span class="en">Bottom-up Notes</span></span><span class="card-side"><span class="datechip">06/20</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h1>由下往上筆記法（Bottom-up Organization）</h1>
+</ul></div></details><details class="card" id="c138" data-s="由下往上筆記法 bottom-up notes 卡片盒 知識管理 學習方法 知識管理方法論"><summary class="card-head"><span class="card-title">由下往上筆記法<span class="en">Bottom-up Notes</span></span><span class="card-side"><span class="datechip">06/08</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h1>由下往上筆記法（Bottom-up Organization）</h1>
 <h2>定義</h2>
 <p>不在筆記前預設分類架構，而是先累積原子想法卡，讓主題、章節、甚至書的結構<strong>從密集連結的卡片群中自然浮現</strong>。這是 Zettelkasten 與傳統資料夾歸檔系統最根本的哲學差異。</p>
 <h2>延伸說明</h2>
@@ -14332,16 +15513,16 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 </blockquote>
 <h2>相關概念</h2>
 <ul>
-<li><a class="wl" data-t="c120" href="#c120">Zettelkasten 卡片盒系統</a> — 底部思維的全貌架構</li>
-<li><a class="wl" data-t="c122" href="#c122">原子筆記</a> — Bottom-up 的基本單元</li>
-<li><a class="wl" data-t="c125" href="#c125">第二大腦 外部知識系統</a> — 讓知識系統替你找連結</li>
-<li><a class="wl" data-t="c124" href="#c124">三大認知限制資源</a> — 為什麼不能靠大腦預先組織一切</li>
+<li><a class="wl" data-t="c135" href="#c135">Zettelkasten 卡片盒系統</a> — 底部思維的全貌架構</li>
+<li><a class="wl" data-t="c137" href="#c137">原子筆記</a> — Bottom-up 的基本單元</li>
+<li><a class="wl" data-t="c140" href="#c140">第二大腦 外部知識系統</a> — 讓知識系統替你找連結</li>
+<li><a class="wl" data-t="c139" href="#c139">三大認知限制資源</a> — 為什麼不能靠大腦預先組織一切</li>
 </ul>
 <h2>出處／可驗證來源</h2>
 <ul>
 <li>Ahrens, Sönke. <em>How to Take Smart Notes</em>. 2017（第二版 2022）。（ISBN 待查）</li>
 <li>YouTube 影片：「This Book Changed How I Read」<a href="https://youtu.be/IgCPb3PnW5Y">https://youtu.be/IgCPb3PnW5Y</a>（整理日 2026-06-20）</li>
-</ul></div></details><details class="card" id="c124" data-s="三大認知限制資源 three cognitive limits 卡片盒 知識管理 認知科學"><summary class="card-head"><span class="card-title">三大認知限制資源<span class="en">Three Cognitive Limits</span></span><span class="card-side"><span class="datechip">06/20</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>定義</h2>
+</ul></div></details><details class="card" id="c139" data-s="三大認知限制資源 three cognitive limits 卡片盒 知識管理 認知科學 知識管理方法論"><summary class="card-head"><span class="card-title">三大認知限制資源<span class="en">Three Cognitive Limits</span></span><span class="card-side"><span class="datechip">06/08</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>定義</h2>
 <p>人腦在任何時刻只有三種非常有限的認知資源：<strong>注意力（Attention）</strong>、<strong>短期記憶（Working Memory）</strong>、<strong>意志力（Willpower）</strong>。這三者一旦被「系統維護任務」（如決定筆記放哪、記住還沒寫下的想法）消耗，就無法用於真正的深度思考與創作。</p>
 <h2>延伸說明</h2>
 <p><strong>三種資源各自的限制</strong>：</p>
@@ -14385,16 +15566,16 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 - 讓系統本身充滿吸引力（因連結而有趣）：降低意志力消耗</p>
 <h2>相關概念</h2>
 <ul>
-<li><a class="wl" data-t="c120" href="#c120">Zettelkasten 卡片盒系統</a> — 為這三種限制設計的應對系統</li>
-<li><a class="wl" data-t="c125" href="#c125">第二大腦 外部知識系統</a> — 將認知負擔外包給外部系統</li>
-<li><a class="wl" data-t="c126" href="#c126">學習心流</a> — 意志力不被消耗時，學習才能進入心流</li>
+<li><a class="wl" data-t="c135" href="#c135">Zettelkasten 卡片盒系統</a> — 為這三種限制設計的應對系統</li>
+<li><a class="wl" data-t="c140" href="#c140">第二大腦 外部知識系統</a> — 將認知負擔外包給外部系統</li>
+<li><a class="wl" data-t="c141" href="#c141">學習心流</a> — 意志力不被消耗時，學習才能進入心流</li>
 </ul>
 <h2>出處／可驗證來源</h2>
 <ul>
 <li>Ahrens, Sönke. <em>How to Take Smart Notes</em>. 2017（第二版 2022）。（ISBN 待查）</li>
 <li>Miller, G. A., "The Magical Number Seven, Plus or Minus Two," <em>Psychological Review</em>, 1956. <a href="https://doi.org/10.1037/h0043158">https://doi.org/10.1037/h0043158</a>（短期記憶容量研究；查證 2026-06-20）</li>
 <li>YouTube 影片：「This Book Changed How I Read」<a href="https://youtu.be/IgCPb3PnW5Y">https://youtu.be/IgCPb3PnW5Y</a>（整理日 2026-06-20）</li>
-</ul></div></details><details class="card" id="c125" data-s="第二大腦 外部知識系統 second brain 卡片盒 知識管理 認知延伸"><summary class="card-head"><span class="card-title">第二大腦 外部知識系統<span class="en">Second Brain</span></span><span class="card-side"><span class="datechip">06/20</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h1>第二大腦／外部知識系統</h1>
+</ul></div></details><details class="card" id="c140" data-s="第二大腦 外部知識系統 second brain 卡片盒 知識管理 認知延伸 知識管理方法論"><summary class="card-head"><span class="card-title">第二大腦 外部知識系統<span class="en">Second Brain</span></span><span class="card-side"><span class="datechip">06/08</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h1>第二大腦／外部知識系統</h1>
 <h2>定義</h2>
 <p>將知識與連結外化到大腦以外的系統（如卡片盒），使其成為可以主動「對話」的思考夥伴，而非只是被動儲存的資料庫。真正的第二大腦不是硬碟（靜態儲存），而是動態的<strong>思考環境</strong>。</p>
 <h2>延伸說明</h2>
@@ -14415,16 +15596,16 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 - 差別：RAG 由 AI 找連結；卡片盒由<strong>你主動建立連結</strong>，因此理解更深</p>
 <h2>相關概念</h2>
 <ul>
-<li><a class="wl" data-t="c120" href="#c120">Zettelkasten 卡片盒系統</a> — 第二大腦的具體實作</li>
-<li><a class="wl" data-t="c124" href="#c124">三大認知限制資源</a> — 為什麼大腦本身不夠用</li>
-<li><a class="wl" data-t="c123" href="#c123">由下往上筆記法</a> — 讓系統主動浮現洞見</li>
+<li><a class="wl" data-t="c135" href="#c135">Zettelkasten 卡片盒系統</a> — 第二大腦的具體實作</li>
+<li><a class="wl" data-t="c139" href="#c139">三大認知限制資源</a> — 為什麼大腦本身不夠用</li>
+<li><a class="wl" data-t="c138" href="#c138">由下往上筆記法</a> — 讓系統主動浮現洞見</li>
 <li><a class="wl" data-t="c84" href="#c84">RAG 檢索增強生成</a> — AI 版的「第二大腦」類比</li>
 </ul>
 <h2>出處／可驗證來源</h2>
 <ul>
 <li>Ahrens, Sönke. <em>How to Take Smart Notes</em>. 2017（第二版 2022）。（ISBN 待查）</li>
 <li>YouTube 影片：「This Book Changed How I Read」<a href="https://youtu.be/IgCPb3PnW5Y">https://youtu.be/IgCPb3PnW5Y</a>（整理日 2026-06-20）</li>
-</ul></div></details><details class="card" id="c126" data-s="學習心流 flow in learning 卡片盒 知識管理 學習方法 心理學"><summary class="card-head"><span class="card-title">學習心流<span class="en">Flow in Learning</span></span><span class="card-side"><span class="datechip">06/20</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h1>學習心流（Flow in Learning）</h1>
+</ul></div></details><details class="card" id="c141" data-s="學習心流 flow in learning 卡片盒 知識管理 學習方法 心理學 知識管理方法論"><summary class="card-head"><span class="card-title">學習心流<span class="en">Flow in Learning</span></span><span class="card-side"><span class="datechip">06/08</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h1>學習心流（Flow in Learning）</h1>
 <h2>定義</h2>
 <p>當學習系統的設計降低摩擦（friction）、讓下一步永遠清晰可行時，學習和寫作本身就會像<strong>遊戲一樣自然流動</strong>，不再依賴意志力強迫自己。Zettelkasten 的核心設計目標之一，就是讓知識工作進入心流狀態。</p>
 <h2>延伸說明</h2>
@@ -14447,16 +15628,16 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 </blockquote>
 <h2>相關概念</h2>
 <ul>
-<li><a class="wl" data-t="c124" href="#c124">三大認知限制資源</a> — 意志力不被消耗，心流才能發生</li>
-<li><a class="wl" data-t="c120" href="#c120">Zettelkasten 卡片盒系統</a> — 設計心流的整體系統</li>
-<li><a class="wl" data-t="c123" href="#c123">由下往上筆記法</a> — 永遠有下一步可做，不用面對空白</li>
+<li><a class="wl" data-t="c139" href="#c139">三大認知限制資源</a> — 意志力不被消耗，心流才能發生</li>
+<li><a class="wl" data-t="c135" href="#c135">Zettelkasten 卡片盒系統</a> — 設計心流的整體系統</li>
+<li><a class="wl" data-t="c138" href="#c138">由下往上筆記法</a> — 永遠有下一步可做，不用面對空白</li>
 </ul>
 <h2>出處／可驗證來源</h2>
 <ul>
 <li>Ahrens, Sönke. <em>How to Take Smart Notes</em>. 2017（第二版 2022）。（ISBN 待查）</li>
 <li>Csikszentmihalyi, M. <em>Flow: The Psychology of Optimal Experience</em>. Harper &amp; Row, 1990. （ISBN 待查）</li>
 <li>YouTube 影片：「This Book Changed How I Read」<a href="https://youtu.be/IgCPb3PnW5Y">https://youtu.be/IgCPb3PnW5Y</a>（整理日 2026-06-20）</li>
-</ul></div></details></div></details></section><section class="panel" data-tab="09"><details class="acc-sec" open><summary class="acc-sec-head"><span><span class="acc-sec-title">觀點卡片</span><span class="acc-sub">市場觀點主題卡・19張</span></span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="acc-sec-body"><details class="card" id="c141" data-s="聯準會利率路徑與通膨  卡片盒 市場觀點 總經 聯準會 利率 通膨"><summary class="card-head"><span class="card-title">聯準會利率路徑與通膨</span><span class="card-side"><span class="datechip">07/29</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
+</ul></div></details></div></details></section><section class="panel" data-tab="09"><details class="acc-sec" open><summary class="acc-sec-head"><span><span class="acc-sec-title">觀點卡片</span><span class="acc-sub">市場觀點主題卡・19張</span></span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="acc-sec-body"><details class="card" id="c156" data-s="聯準會利率路徑與通膨  卡片盒 市場觀點 總經 聯準會 利率 通膨"><summary class="card-head"><span class="card-title">聯準會利率路徑與通膨</span><span class="card-side"><span class="datechip">07/29</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
 <p>核心 PCE 升溫，聯準會官員集體轉鷹，市場預期由「降息」翻轉為「可能升息」，帶動美元、債券殖利率與全球風險偏好重新定價。核心問題：<strong>這是通膨二次上行的轉折、還是單月數據的雜訊？</strong></p>
 <h2>觀察軸（事實·依日期）</h2>
 <div class="tw"><table>
@@ -14528,22 +15709,22 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <h2>我的觀點〔草稿，待我修改〕</h2>
 <p><strong>分析框架——通膨/利率看：①數據是趨勢還是單月 ②市場定價(點陣圖/期貨) vs 實際 ③對各資產的傳導順序。</strong>
 - 一個月核心 PCE 3.4% <em>還不足以斷定二次通膨</em>，但「官員集體轉鷹＋點陣圖近半數預期升息」是更重要的訊號——這是 <em>預期</em> 的轉向，市場交易的是預期。
-- 傳導順序值得記熟：鷹派→美元升（<a class="wl" data-t="c140" href="#c140">美元走強與台幣保衛戰</a>）＋實質殖利率升→高估值成長股/無息資產(黃金、加密)受壓→新興市場資金外流（台股）。本輪台股回調的上游就在這裡。
+- 傳導順序值得記熟：鷹派→美元升（<a class="wl" data-t="c155" href="#c155">美元走強與台幣保衛戰</a>）＋實質殖利率升→高估值成長股/無息資產(黃金、加密)受壓→新興市場資金外流（台股）。本輪台股回調的上游就在這裡。
 - 要分清「higher for longer（維持高利率）」與「真的升息」是兩件事，市場常過度反應。下一份 CPI/PCE 是驗證點。
 - <strong>起手判斷</strong>：基準情境為「降息延後、非真升息」；通膨二次上行列為風險情境。對利率敏感資產（長債、高本益比成長股）短期審慎，數據若回落則是反向機會。</p>
 <h3>我的判斷（2026-06-30）</h3>
 <p>基準情境：<strong>利率方向不確定、波動性大</strong>（不押單一方向）。背後是兩股相反力量在拉扯：
-- <strong>近期通膨的搖擺因子＝能源／地緣</strong>：當前通膨壓力很大一塊來自美伊戰爭對油價的連鎖效應；若戰事順利解決，油價（已因荷姆茲復航回落，見 <a class="wl" data-t="c131" href="#c131">原物料與商品</a>）下滑會帶動通膨順勢降溫 → 偏鴿。
+- <strong>近期通膨的搖擺因子＝能源／地緣</strong>：當前通膨壓力很大一塊來自美伊戰爭對油價的連鎖效應；若戰事順利解決，油價（已因荷姆茲復航回落，見 <a class="wl" data-t="c146" href="#c146">原物料與商品</a>）下滑會帶動通膨順勢降溫 → 偏鴿。
 - <strong>結構性的高利率壓力＝財政支配</strong>：美國債務約 36 兆美元、債務利息成本已難負擔；川普想降息，但降太快恐讓通膨捲土重來（2022 高通膨的教訓；註：是高通膨約 9%，非嚴格定義的惡性通膨）。這股力量讓利率「降不下去」。
 - <strong>Warsh（潛在新任 Fed 主席）路線</strong>：①扭轉／縮減 Fed 資產負債表（QT）②以縮表降低貨幣供給流動性、避免資產過度膨脹 ③能否降息取決於配套措施 → 可能是「壓短端利率、同時抽長端流動性」的組合。
-- <strong>對我部位的含意（收口）</strong>：油降可能讓短端有降息空間，但 QT＋債務供給＋去美元化讓長端居高 → <strong>較可能是「殖利率曲線陡化（steepener）」而非單純升或降</strong>。陡化下，我的 <a class="wl" data-t="c130" href="#c130">債市殖利率與利差</a> 中短天期 IG 佔優、長債續避（自洽）；higher-for-longer 也壓抑股市估值，故 <a class="wl" data-t="c142" href="#c142">股市估值與獲利</a> 多頭續靠獲利、不靠評價重估。
+- <strong>對我部位的含意（收口）</strong>：油降可能讓短端有降息空間，但 QT＋債務供給＋去美元化讓長端居高 → <strong>較可能是「殖利率曲線陡化（steepener）」而非單純升或降</strong>。陡化下，我的 <a class="wl" data-t="c145" href="#c145">債市殖利率與利差</a> 中短天期 IG 佔優、長債續避（自洽）；higher-for-longer 也壓抑股市估值，故 <a class="wl" data-t="c157" href="#c157">股市估值與獲利</a> 多頭續靠獲利、不靠評價重估。
 - <strong>要盯的轉折</strong>：核心 PCE 趨勢（油價回落是否真的拉低通膨）＋ Warsh 上任後的縮表／利率配套 ＋ 長天期殖利率與曲線斜率。</p>
 <h3>我的判斷（2026-07-29 · FOMC 週）</h3>
 <p>主題從「數據是趨勢或雜訊」進展到 <strong>看利率路徑、不看單次決議</strong>——這是本輪最重要的認知升級。
 - <strong>輪動即訊號</strong>：指數（S&amp;P 500）微漲、半導體（SOX）重挫的背離才是重點。錢沒離場，是由高 beta 科技輪動到防禦股＝事件前的 risk-off 定位。指數撐住但領導股收斂/轉防禦，是典型觀望訊號。
 - <strong>半導體下跌要拆兩因子</strong>：①宏觀/利率（Fed，衝擊所有長天期資產）②產業個別事件（NVDA 5,000 億記憶體協議＋南韓/中國記憶體競爭）。核心技能＝永遠問「宏觀 vs. 個股各佔多少」。
 - <strong>為何小幅升息卻重擊科技</strong>：關鍵不是這 25bp，而是它對「利率路徑」的訊號。市場交易的是整條未來路徑；對長天期資產，higher-for-longer 會沿多年折現的現金流複利放大，故小幅變動大幅移動估值。→ <strong>這也是 PCE（週四）比升息本身更重要的原因：數據重塑預期路徑。</strong>
-- <strong>傳導機制自洽</strong>：成長/科技價值多在遠期現金流；利率升→折現加重→現值跌幅大於今日就有穩定現金流的防禦/價值股。higher-for-longer 壓估值，呼應 <a class="wl" data-t="c142" href="#c142">股市估值與獲利</a> 多頭續靠獲利、不靠評價重估。
+- <strong>傳導機制自洽</strong>：成長/科技價值多在遠期現金流；利率升→折現加重→現值跌幅大於今日就有穩定現金流的防禦/價值股。higher-for-longer 壓估值，呼應 <a class="wl" data-t="c157" href="#c157">股市估值與獲利</a> 多頭續靠獲利、不靠評價重估。
 - <strong>要盯的驗證點</strong>：核心 PCE YoY（週四 7/30）＝ hold vs. hike 的關鍵；四大科技財報（AAPL/AMZN/META/MSFT）是否撐住獲利敘事。</p>
 <h2>後續追蹤</h2>
 <ul>
@@ -14552,7 +15733,7 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <li>10 年期美債殖利率關鍵價位。</li>
 </ul>
 <h2>延伸連結</h2>
-<p><a class="wl" data-t="c140" href="#c140">美元走強與台幣保衛戰</a> · <a class="wl" data-t="c53" href="#c53">債券殖利率與價格</a> · <a class="wl" data-t="c133" href="#c133">地緣風險美伊衝突</a> · <a class="wl" data-t="c128" href="#c128">AI投資ROI質疑與行情分歧</a></p></div></details><details class="card" id="c143" data-s="記憶體超級循環  卡片盒 市場觀點 半導體 記憶體 hbm ai"><summary class="card-head"><span class="card-title">記憶體超級循環</span><span class="card-side"><span class="datechip">07/28</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
+<p><a class="wl" data-t="c155" href="#c155">美元走強與台幣保衛戰</a> · <a class="wl" data-t="c53" href="#c53">債券殖利率與價格</a> · <a class="wl" data-t="c148" href="#c148">地緣風險美伊衝突</a> · <a class="wl" data-t="c143" href="#c143">AI投資ROI質疑與行情分歧</a></p></div></details><details class="card" id="c158" data-s="記憶體超級循環  卡片盒 市場觀點 半導體 記憶體 hbm ai"><summary class="card-head"><span class="card-title">記憶體超級循環</span><span class="card-side"><span class="datechip">07/28</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
 <p>AI 資料中心對高頻寬記憶體（HBM）與 DRAM 的爆量需求，造成供給緊俏、定價權回到供應商手中，毛利率大幅擴張。核心問題：<strong>這是結構性超級循環，還是又一次會反轉的記憶體景氣循環？</strong></p>
 <h2>觀察軸（事實·依日期）</h2>
 <div class="tw"><table>
@@ -14654,9 +15835,9 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 - <strong>起手判斷</strong>：方向看多但對「90% 毛利率可持續」存疑；龍頭（美光、南亞科）受惠最確定，二三線受傷風險高。要把這當「景氣循環的陡峭上行段」操作，而非永久成長股。</p>
 <h3>我的判斷（2026-07-28，依 09.99 框架複盤）</h3>
 <p>新事實把「台廠標準 DRAM 會不會被 CXMT 供給打」這題部分解掉：<strong>CSP 兩年長約（LTA）給了南亞科、華邦電「需求能見度」</strong>——有長約在手，短期新增供給對報價的衝擊被緩衝，這是偏多的結構利多，也解釋了為何自有產能廠受惠最直接。
-- <strong>但兩件事讓我維持「回檔分批買龍頭、非追高」</strong>：①「分析師示警報價恐提前一年反轉、年中觸頂」＝我 09.01 一路擔心的循環頂訊號，開始有人喊了；②7/17–7/23 的暴漲暴跌顯示價格尚未穩、籌碼（<a class="wl" data-t="c134" href="#c134">外資買賣超與融資風險</a>）未出清。
+- <strong>但兩件事讓我維持「回檔分批買龍頭、非追高」</strong>：①「分析師示警報價恐提前一年反轉、年中觸頂」＝我 09.01 一路擔心的循環頂訊號，開始有人喊了；②7/17–7/23 的暴漲暴跌顯示價格尚未穩、籌碼（<a class="wl" data-t="c149" href="#c149">外資買賣超與融資風險</a>）未出清。
 - <strong>一句話</strong>：LTA 提升了「勝率」（基本面能見度），但情緒與波動還沒給我好「賠率」。加碼條件＝融資餘額大降（散戶投降）＋報價未如警訊般反轉，兩者確認再分批進龍頭。
-- <strong>最該盯死的單一訊號</strong>：雲端四雄 AI 資本支出 guidance（需求端領先指標，見 <a class="wl" data-t="c128" href="#c128">AI投資ROI質疑與行情分歧</a>）。</p>
+- <strong>最該盯死的單一訊號</strong>：雲端四雄 AI 資本支出 guidance（需求端領先指標，見 <a class="wl" data-t="c143" href="#c143">AI投資ROI質疑與行情分歧</a>）。</p>
 <h2>後續追蹤</h2>
 <ul>
 <li>HBM 報價何時鬆動？美光／海力士擴產進度。</li>
@@ -14664,7 +15845,7 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <li>台廠：南亞科、華邦電在這波循環的訂單能見度。</li>
 </ul>
 <h2>延伸連結</h2>
-<p><a class="wl" data-t="c127" href="#c127">AI伺服器與CoWoS先進封裝</a> · <a class="wl" data-t="c128" href="#c128">AI投資ROI質疑與行情分歧</a> · <a class="wl" data-t="c60" href="#c60">台股AI族群分類</a></p></div></details><details class="card" id="c133" data-s="地緣風險美伊衝突  卡片盒 市場觀點 地緣政治 原油 能源"><summary class="card-head"><span class="card-title">地緣風險美伊衝突</span><span class="card-side"><span class="datechip">07/26</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
+<p><a class="wl" data-t="c142" href="#c142">AI伺服器與CoWoS先進封裝</a> · <a class="wl" data-t="c143" href="#c143">AI投資ROI質疑與行情分歧</a> · <a class="wl" data-t="c60" href="#c60">台股AI族群分類</a></p></div></details><details class="card" id="c148" data-s="地緣風險美伊衝突  卡片盒 市場觀點 地緣政治 原油 能源"><summary class="card-head"><span class="card-title">地緣風險美伊衝突</span><span class="card-side"><span class="datechip">07/26</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
 <p>美伊停火脆弱，無人機、油輪攻擊與報復性空襲反覆，牽動荷姆茲海峽航運、原油價格波動與全球供應鏈風險溢價。核心問題：<strong>這是會升級的系統性風險、還是市場已鈍化的「背景噪音」？</strong></p>
 <h2>觀察軸（事實·依日期）</h2>
 <div class="tw"><table>
@@ -14792,7 +15973,7 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <p><strong>分析框架——地緣事件對市場的影響看：①是否影響實體供給(油/航運) ②持續性 ③市場是否已 price-in。</strong>
 - 關鍵變數是 <em>荷姆茲海峽</em>（全球約 1/5 原油海運經此）。只要不真正封鎖，油價就是「波動」而非「趨勢」；目前屬前者。
 - 市場反應在鈍化：攻擊→空襲→停火快速循環，油價單週能跌逾 4%，顯示交易者把它當「可逆事件」。<strong>真正的尾部風險是海峽實質封鎖</strong>——機率低但衝擊大，要列為避險情境。
-- 對台灣的傳導路徑：油價→通膨→Fed 政策（連到 <a class="wl" data-t="c141" href="#c141">聯準會利率路徑與通膨</a>）；以及避險情緒→外資風險偏好→台股資金面。
+- 對台灣的傳導路徑：油價→通膨→Fed 政策（連到 <a class="wl" data-t="c156" href="#c156">聯準會利率路徑與通膨</a>）；以及避險情緒→外資風險偏好→台股資金面。
 - <strong>起手判斷</strong>：基準情境為「高噪音、低實質衝擊」，不主動因此調整部位；但保留「海峽封鎖→油價跳升→通膨/股市雙殺」的對沖劇本。</p>
 <h2>後續追蹤</h2>
 <ul>
@@ -14801,7 +15982,7 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <li>停火協議是否再破裂（事件密度）。</li>
 </ul>
 <h2>延伸連結</h2>
-<p><a class="wl" data-t="c141" href="#c141">聯準會利率路徑與通膨</a> · <a class="wl" data-t="c140" href="#c140">美元走強與台幣保衛戰</a></p></div></details><details class="card" id="c131" data-s="原物料與商品  卡片盒 市場觀點 商品 原油 黃金 地緣"><summary class="card-head"><span class="card-title">原物料與商品</span><span class="card-side"><span class="datechip">07/25</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
+<p><a class="wl" data-t="c156" href="#c156">聯準會利率路徑與通膨</a> · <a class="wl" data-t="c155" href="#c155">美元走強與台幣保衛戰</a></p></div></details><details class="card" id="c146" data-s="原物料與商品  卡片盒 市場觀點 商品 原油 黃金 地緣"><summary class="card-head"><span class="card-title">原物料與商品</span><span class="card-side"><span class="datechip">07/25</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
 <p>學會用商品的語言定價——每種商品有自己的供需故事：<strong>原油 = 景氣需求 ＋ 地緣供給</strong>（也是通膨與景氣的溫度計）；<strong>黃金 = 實質利率（反向）＋ 避險／去美元化需求</strong>。核心問題：<strong>這週原油與黃金的方向，各自在說什麼故事——是需求、供給、還是恐懼？</strong></p>
 <h2>觀察軸（事實·依日期）</h2>
 <div class="tw"><table>
@@ -14907,24 +16088,24 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 </table></div>
 <h2>我的觀點〔草稿，待我修改〕</h2>
 <p><strong>分析框架——讀商品要逐品拆供需，別混為一談：①原油看「需求(景氣)vs 供給(地緣/OPEC)」哪個主導 ②黃金看「實質利率(名目殖利率−通膨)」與「避險/央行買盤」 ③用商品反過來驗證總經（油價＝通膨與景氣、金價＝市場恐懼度）。</strong>
-- 原油是「供給故事」在主導：這波下跌不是需求轉弱，而是 <a class="wl" data-t="c133" href="#c133">地緣風險美伊衝突</a> 緩解、荷姆茲復航讓供給正常化、地緣風險溢價消風。<strong>油價跌對通膨是利多</strong>——少了一個推升 <a class="wl" data-t="c141" href="#c141">聯準會利率路徑與通膨</a> 的力道。
+- 原油是「供給故事」在主導：這波下跌不是需求轉弱，而是 <a class="wl" data-t="c148" href="#c148">地緣風險美伊衝突</a> 緩解、荷姆茲復航讓供給正常化、地緣風險溢價消風。<strong>油價跌對通膨是利多</strong>——少了一個推升 <a class="wl" data-t="c156" href="#c156">聯準會利率路徑與通膨</a> 的力道。
 - 黃金的反常才是重點：10Y 4.38% 減核心通膨約 3.4%，實質利率其實「微正」，照理對金價不利；但金價仍站上 $4,000。這代表撐金價的不是實質利率，而是<strong>結構性需求</strong>——央行買盤、去美元化、長線避險。市場用真金白銀在對沖某種它說不出口的擔憂。
 - 跨卡對照：油跌（地緣緩、通膨壓力減）＋金高（結構避險）＝商品給的訊號分歧。前者讓風險資產鬆口氣，後者提醒「底層的不安沒消失」。
 - <strong>起手判斷</strong>：原油短期偏空（供給回補），但別追空——地緣是會反覆的變數；黃金結構偏多，視為「對總經與貨幣體系的長線保險」，回檔分批而非追高。</p>
 <h3>我的判斷（2026-06-30）</h3>
 <ul>
-<li><strong>黃金（兩股對抗力量）</strong>：higher-for-longer 的高利率是循環逆風、壓抑金價；但中國等國去美元化、減持美元與美債以對沖政治風險，是結構順風 → 金價在高檔仍有支撐。（與 <a class="wl" data-t="c130" href="#c130">債市殖利率與利差</a> 同一股去美元化力量）〔備忘：須查證「今年金價回檔幅度」的實際數字，勿用未驗證前提〕</li>
+<li><strong>黃金（兩股對抗力量）</strong>：higher-for-longer 的高利率是循環逆風、壓抑金價；但中國等國去美元化、減持美元與美債以對沖政治風險，是結構順風 → 金價在高檔仍有支撐。（與 <a class="wl" data-t="c145" href="#c145">債市殖利率與利差</a> 同一股去美元化力量）〔備忘：須查證「今年金價回檔幅度」的實際數字，勿用未驗證前提〕</li>
 <li><strong>原油（供給故事、但脆弱）</strong>：油因美伊停火、荷姆茲復航而跌，屬抗通膨利多；但這是地緣驅動、脆弱可逆——和平談判進展與最終結果未定、仍有衝突拖累；且戰備儲油(SPR)消耗快、日後回補需求給油價一個底 → 油價難快速續跌。</li>
-<li><strong>對 Fed 的含意</strong>：油跌「可能」給 Fed 鬆動短端的空間，但因油跌不可靠，我不據此改變結構判斷；長端壓力（債務／QT／去美元化）不變 → 維持 <a class="wl" data-t="c141" href="#c141">聯準會利率路徑與通膨</a> 的「陡化、higher-for-longer」基準。</li>
+<li><strong>對 Fed 的含意</strong>：油跌「可能」給 Fed 鬆動短端的空間，但因油跌不可靠，我不據此改變結構判斷；長端壓力（債務／QT／去美元化）不變 → 維持 <a class="wl" data-t="c156" href="#c156">聯準會利率路徑與通膨</a> 的「陡化、higher-for-longer」基準。</li>
 </ul>
 <h2>後續追蹤</h2>
 <ul>
-<li>原油：OPEC+ 產量決策、荷姆茲局勢是否再生變（接 <a class="wl" data-t="c133" href="#c133">地緣風險美伊衝突</a>）。</li>
+<li>原油：OPEC+ 產量決策、荷姆茲局勢是否再生變（接 <a class="wl" data-t="c148" href="#c148">地緣風險美伊衝突</a>）。</li>
 <li>黃金：各國央行購金數據、實質殖利率走向。</li>
-<li>油價對 <a class="wl" data-t="c141" href="#c141">聯準會利率路徑與通膨</a> 通膨數據的傳導。</li>
+<li>油價對 <a class="wl" data-t="c156" href="#c156">聯準會利率路徑與通膨</a> 通膨數據的傳導。</li>
 </ul>
 <h2>延伸連結</h2>
-<p>09.00 市場觀點追蹤 · <a class="wl" data-t="c130" href="#c130">債市殖利率與利差</a> · <a class="wl" data-t="c141" href="#c141">聯準會利率路徑與通膨</a> · <a class="wl" data-t="c133" href="#c133">地緣風險美伊衝突</a></p></div></details><details class="card" id="c132" data-s="國家隊進場與台股系統性回調  卡片盒 市場觀點 台股 資金面 外資"><summary class="card-head"><span class="card-title">國家隊進場與台股系統性回調</span><span class="card-side"><span class="datechip">07/25</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
+<p>09.00 市場觀點追蹤 · <a class="wl" data-t="c145" href="#c145">債市殖利率與利差</a> · <a class="wl" data-t="c156" href="#c156">聯準會利率路徑與通膨</a> · <a class="wl" data-t="c148" href="#c148">地緣風險美伊衝突</a></p></div></details><details class="card" id="c147" data-s="國家隊進場與台股系統性回調  卡片盒 市場觀點 台股 資金面 外資"><summary class="card-head"><span class="card-title">國家隊進場與台股系統性回調</span><span class="card-side"><span class="datechip">07/25</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
 <p>2026 年 6 月下旬外資大舉提款引發台股全面性回調，國家隊（政府基金、八大行庫、投信）協同進場護盤。核心問題：<strong>這是資金面的「系統性回調」、還是基本面反轉的起點？</strong></p>
 <h2>觀察軸（事實·依日期）</h2>
 <div class="tw"><table>
@@ -15020,8 +16201,8 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 </table></div>
 <h2>我的觀點〔草稿，待我修改〕</h2>
 <p><strong>分析框架——區分回調性質：①資金面(流動性) ②基本面(獲利) ③情緒面(恐慌)。</strong>
-- 證據偏向 <em>資金面＋情緒面</em>：跌勢由外資提款＋匯率驅動（見 <a class="wl" data-t="c140" href="#c140">美元走強與台幣保衛戰</a>），半導體訂單能見度仍佳，支持「非基本面反轉」的定性。
-- 但「系統性回調」是賣方常用的安撫話術，要保留懷疑：若 <a class="wl" data-t="c141" href="#c141">聯準會利率路徑與通膨</a> 持續轉鷹、AI 資本支出鬆動，資金面問題會變成基本面問題。
+- 證據偏向 <em>資金面＋情緒面</em>：跌勢由外資提款＋匯率驅動（見 <a class="wl" data-t="c155" href="#c155">美元走強與台幣保衛戰</a>），半導體訂單能見度仍佳，支持「非基本面反轉」的定性。
+- 但「系統性回調」是賣方常用的安撫話術，要保留懷疑：若 <a class="wl" data-t="c156" href="#c156">聯準會利率路徑與通膨</a> 持續轉鷹、AI 資本支出鬆動，資金面問題會變成基本面問題。
 - 國家隊買盤是「止跌訊號」而非「反轉訊號」——歷史上官方護盤能穩信心，但扭轉外資趨勢要靠資金回流，看淨空單回補＋夜盤反彈是早期落底訊號。
 - <strong>起手判斷</strong>：短線過度悲觀、具技術性反彈條件；中期關鍵在外資是否回流，不宜把護盤當作可長抱的理由。</p>
 <h2>後續追蹤</h2>
@@ -15031,7 +16212,7 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <li>國家隊買超名單＝官方認定的「核心防守標的」，值得記錄。</li>
 </ul>
 <h2>延伸連結</h2>
-<p><a class="wl" data-t="c140" href="#c140">美元走強與台幣保衛戰</a> · <a class="wl" data-t="c134" href="#c134">外資買賣超與融資風險</a> · <a class="wl" data-t="c141" href="#c141">聯準會利率路徑與通膨</a> · <a class="wl" data-t="c52" href="#c52">台股市場</a></p></div></details><details class="card" id="c140" data-s="美元走強與台幣保衛戰  卡片盒 市場觀點 匯率 美元 台幣 總經"><summary class="card-head"><span class="card-title">美元走強與台幣保衛戰</span><span class="card-side"><span class="datechip">07/25</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
+<p><a class="wl" data-t="c155" href="#c155">美元走強與台幣保衛戰</a> · <a class="wl" data-t="c149" href="#c149">外資買賣超與融資風險</a> · <a class="wl" data-t="c156" href="#c156">聯準會利率路徑與通膨</a> · <a class="wl" data-t="c52" href="#c52">台股市場</a></p></div></details><details class="card" id="c155" data-s="美元走強與台幣保衛戰  卡片盒 市場觀點 匯率 美元 台幣 總經"><summary class="card-head"><span class="card-title">美元走強與台幣保衛戰</span><span class="card-side"><span class="datechip">07/25</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
 <p>聯準會轉鷹＋核心通膨升溫推升美元至年內新高，新台幣承壓逼近 32 元關鍵防線，外資匯出加劇資金外流壓力。核心問題：<strong>台幣貶值是短期資金面、還是利差結構轉向的中期趨勢？</strong></p>
 <h2>觀察軸（事實·依日期）</h2>
 <div class="tw"><table>
@@ -15097,10 +16278,10 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 </table></div>
 <h2>我的觀點〔草稿，待我修改〕</h2>
 <p><strong>分析框架——匯率看三力：利差(Fed vs 央行)、貿易帳(出口收匯)、資金流(外資股債進出)。</strong>
-- 這波貶值是 <em>利差走擴＋資金外流</em> 雙殺：Fed 轉鷹（見 <a class="wl" data-t="c141" href="#c141">聯準會利率路徑與通膨</a>）拉大美台利差，外資賣股同步匯出，三力中兩力轉空。
+- 這波貶值是 <em>利差走擴＋資金外流</em> 雙殺：Fed 轉鷹（見 <a class="wl" data-t="c156" href="#c156">聯準會利率路徑與通膨</a>）拉大美台利差，外資賣股同步匯出，三力中兩力轉空。
 - 台灣貿易帳長期順差（半導體出口）是台幣的底層支撐，所以「失控貶值」機率低，較可能是 <em>區間貶值＋央行調節</em>。32 元是心理與政策防線，破不破看央行態度與外資是否續賣。
 - 雙面影響要分清：貶值對 <em>出口電子股</em> 有匯兌利益，但對 <em>壽險</em> 是避險成本上升、對 <em>進口/內需</em> 是成本壓力——不是單純利多或利空。
-- <strong>起手判斷</strong>：中性偏貶，但相信央行守 32 的意願強；與 <a class="wl" data-t="c132" href="#c132">國家隊進場與台股系統性回調</a> 是同一枚硬幣（資金外流），台幣止穩會是台股落底的同步訊號。</p>
+- <strong>起手判斷</strong>：中性偏貶，但相信央行守 32 的意願強；與 <a class="wl" data-t="c147" href="#c147">國家隊進場與台股系統性回調</a> 是同一枚硬幣（資金外流），台幣止穩會是台股落底的同步訊號。</p>
 <h2>後續追蹤</h2>
 <ul>
 <li>央行是否進場調節、外匯存底變化。</li>
@@ -15108,7 +16289,7 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <li>外資匯入/匯出與台股資金面的連動。</li>
 </ul>
 <h2>延伸連結</h2>
-<p><a class="wl" data-t="c141" href="#c141">聯準會利率路徑與通膨</a> · <a class="wl" data-t="c132" href="#c132">國家隊進場與台股系統性回調</a> · <a class="wl" data-t="c59" href="#c59">基金避險成本計算方式</a></p></div></details><details class="card" id="c128" data-s="ai投資roi質疑與行情分歧  卡片盒 市場觀點 ai 美股 行情結構"><summary class="card-head"><span class="card-title">AI投資ROI質疑與行情分歧</span><span class="card-side"><span class="datechip">07/24</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
+<p><a class="wl" data-t="c156" href="#c156">聯準會利率路徑與通膨</a> · <a class="wl" data-t="c147" href="#c147">國家隊進場與台股系統性回調</a> · <a class="wl" data-t="c59" href="#c59">基金避險成本計算方式</a></p></div></details><details class="card" id="c143" data-s="ai投資roi質疑與行情分歧  卡片盒 市場觀點 ai 美股 行情結構"><summary class="card-head"><span class="card-title">AI投資ROI質疑與行情分歧</span><span class="card-side"><span class="datechip">07/24</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
 <p>市場開始質疑龐大 AI 資本支出的回報，獲利與營收實質貢獻在領先者（美光、高通）與落後者（Oracle、Cerebras）之間嚴重分歧，法人對 AI 的胃納降溫、行情結構由「全面上漲」轉為「分化」。核心問題：<strong>這是 AI 泡沫破裂的開端、還是健康的主流輪動？</strong></p>
 <h2>觀察軸（事實·依日期）</h2>
 <div class="tw"><table>
@@ -15159,7 +16340,7 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 </table></div>
 <h2>我的觀點〔草稿，待我修改〕</h2>
 <p><strong>分析框架——區分「泡沫破裂」與「主流輪動」：看 ①資金是流出市場還是換股 ②基本面領先股是否同步走弱 ③估值 vs 獲利落差。</strong>
-- 目前證據偏向 <em>分化/輪動</em> 而非全面破裂：美光（<a class="wl" data-t="c143" href="#c143">記憶體超級循環</a>）獲利強勁仍漲，受傷的是「無獲利、靠融資、負現金流」的個股（Oracle、Cerebras）——這是市場在 <em>分辨真假受惠者</em>，屬健康修正。
+- 目前證據偏向 <em>分化/輪動</em> 而非全面破裂：美光（<a class="wl" data-t="c158" href="#c158">記憶體超級循環</a>）獲利強勁仍漲，受傷的是「無獲利、靠融資、負現金流」的個股（Oracle、Cerebras）——這是市場在 <em>分辨真假受惠者</em>，屬健康修正。
 - 但這是重要的領先警訊：當市場開始問「ROI 在哪」，AI 主題從「夢」進入「驗證」階段，未來看財報兌現度，估值容忍度下降。對台股 AI 鏈（封裝、記憶體）是「基本面要交卷」的提醒。
 - 輪動方向（基礎建設/電力/零組件）值得記——若成立，代表市場相信「AI 需求真實但受惠者擴散」，對台灣電力設備、散熱、PCB 是機會。
 - <strong>起手判斷</strong>：非泡沫破裂、屬汰弱留強的輪動；操作上偏好「有實際獲利兌現」的 AI 受惠股，避開純概念/負現金流名股。這是把「AI 是不是泡沫」這題長期追蹤的主卡。</p>
@@ -15170,7 +16351,7 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <li>資金是流出股市，還是輪動至非 AI 板塊（區分泡沫 vs 輪動）。</li>
 </ul>
 <h2>延伸連結</h2>
-<p><a class="wl" data-t="c143" href="#c143">記憶體超級循環</a> · <a class="wl" data-t="c127" href="#c127">AI伺服器與CoWoS先進封裝</a> · <a class="wl" data-t="c141" href="#c141">聯準會利率路徑與通膨</a> · <a class="wl" data-t="c61" href="#c61">美股AI族群分類</a></p></div></details><details class="card" id="c130" data-s="債市殖利率與利差  卡片盒 市場觀點 債市 殖利率 信用利差 存續期"><summary class="card-head"><span class="card-title">債市殖利率與利差</span><span class="card-side"><span class="datechip">07/24</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
+<p><a class="wl" data-t="c158" href="#c158">記憶體超級循環</a> · <a class="wl" data-t="c142" href="#c142">AI伺服器與CoWoS先進封裝</a> · <a class="wl" data-t="c156" href="#c156">聯準會利率路徑與通膨</a> · <a class="wl" data-t="c61" href="#c61">美股AI族群分類</a></p></div></details><details class="card" id="c145" data-s="債市殖利率與利差  卡片盒 市場觀點 債市 殖利率 信用利差 存續期"><summary class="card-head"><span class="card-title">債市殖利率與利差</span><span class="card-side"><span class="datechip">07/24</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
 <p>學會用債市的語言定價：債券報酬 ≈ <strong>無風險利率（公債殖利率）＋ 信用利差（spread）</strong>，再用<strong>存續期（duration）</strong>衡量對利率的敏感度。核心問題：<strong>現在買債，賺的是「高殖利率的票息」、還是在「薄利差下承擔被低估的風險」？</strong></p>
 <h2>觀察軸（事實·依日期）</h2>
 <div class="tw"><table>
@@ -15227,24 +16408,24 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <h2>我的觀點〔草稿，待我修改〕</h2>
 <p><strong>分析框架——讀債市拆三層：①利率水準與曲線（公債殖利率＝利率風險）②信用利差（風險偏好／違約補償）③存續期（對利率變動的放大倍數）。利差是「市場對風險的訂價」，利差越薄＝市場越樂觀／越自滿。</strong>
 - 現況「票息香、但利差薄」：10 年 4.38% 的殖利率讓債券睽違多年重新有「收益」價值；但 HY 利差僅 2.78%、IG 僅 80bps，代表市場給的風險補償很低——這是樂觀，也是自滿。
-- 利差是領先情緒的指標：利差極度壓縮往往出現在景氣循環的成熟末段（對照 <a class="wl" data-t="c138" href="#c138">景氣循環定位</a>）。<strong>利差沒有走闊的空間多、走闊的風險大</strong>，一旦景氣轉弱或信用事件，薄利差會快速重定價。
-- 存續期的取捨：曲線正斜率但偏平，若 <a class="wl" data-t="c141" href="#c141">聯準會利率路徑與通膨</a> 的通膨二次上行成真，長天期債（高存續期）會最受傷；反之數據轉弱、降息重啟，長債才有資本利得。
+- 利差是領先情緒的指標：利差極度壓縮往往出現在景氣循環的成熟末段（對照 <a class="wl" data-t="c153" href="#c153">景氣循環定位</a>）。<strong>利差沒有走闊的空間多、走闊的風險大</strong>，一旦景氣轉弱或信用事件，薄利差會快速重定價。
+- 存續期的取捨：曲線正斜率但偏平，若 <a class="wl" data-t="c156" href="#c156">聯準會利率路徑與通膨</a> 的通膨二次上行成真，長天期債（高存續期）會最受傷；反之數據轉弱、降息重啟，長債才有資本利得。
 - <strong>起手判斷</strong>：偏好「收高票息、控存續期」——以中短天期投資級債賺確定的殖利率，對高收益債的薄利差保持審慎，把它當景氣自滿的溫度計來盯。</p>
 <h3>我的判斷（2026-06-30）</h3>
 <p>配置選擇：<strong>加碼以中短天期投資級債為主（賺確定票息、控存續期）</strong>，暫不押長天期公債、不碰高收益債。
-- <strong>理由一（利率路徑）</strong>：通膨黏性高、Fed 降息機率不高 → 長天期利率維持高檔的時間更久（higher for longer），長債存續期風險不划算（接 <a class="wl" data-t="c141" href="#c141">聯準會利率路徑與通膨</a>）。
+- <strong>理由一（利率路徑）</strong>：通膨黏性高、Fed 降息機率不高 → 長天期利率維持高檔的時間更久（higher for longer），長債存續期風險不划算（接 <a class="wl" data-t="c156" href="#c156">聯準會利率路徑與通膨</a>）。
 - <strong>理由二（信用）</strong>：高收益債利差僅 2.78%、偏薄，沒給足風險補償，不值得為它冒違約風險。
-- <strong>理由三（結構）</strong>：全球央行去美元化、降低美債持有的趨勢持續，對美元長天期公債需求面不利——與我在 <a class="wl" data-t="c131" href="#c131">原物料與商品</a> 看多黃金是<strong>同一股去美元化力量</strong>。
+- <strong>理由三（結構）</strong>：全球央行去美元化、降低美債持有的趨勢持續，對美元長天期公債需求面不利——與我在 <a class="wl" data-t="c146" href="#c146">原物料與商品</a> 看多黃金是<strong>同一股去美元化力量</strong>。
 - <strong>動態計畫（延後、非放棄長債）</strong>：若風險性資產轉弱（衰退訊號浮現、Fed 轉向降息），屆時再增持長天期公債賺資本利得。策略＝先收票息、把長債子彈留到轉折。
 - <strong>要留意的張力（自我提醒）</strong>：去美元化若結構性推升長端殖利率，下次風險事件時「資金湧入美債避險、長債大漲」的劇本可能被削弱——<strong>加長債前要先確認美債的避險功能仍在</strong>（否則避險資金可能流向黃金、日圓而非美債）。</p>
 <h2>後續追蹤</h2>
 <ul>
 <li>HY 與 IG 信用利差是否開始走闊（風險偏好轉向的最早訊號之一）。</li>
 <li>10 年期美債殖利率關鍵價位與曲線斜率變化。</li>
-<li>通膨數據對長天期殖利率的牽動（接 <a class="wl" data-t="c141" href="#c141">聯準會利率路徑與通膨</a>）。</li>
+<li>通膨數據對長天期殖利率的牽動（接 <a class="wl" data-t="c156" href="#c156">聯準會利率路徑與通膨</a>）。</li>
 </ul>
 <h2>延伸連結</h2>
-<p>09.00 市場觀點追蹤 · <a class="wl" data-t="c142" href="#c142">股市估值與獲利</a> · <a class="wl" data-t="c138" href="#c138">景氣循環定位</a> · <a class="wl" data-t="c141" href="#c141">聯準會利率路徑與通膨</a></p></div></details><details class="card" id="c135" data-s="就業市場  卡片盒 市場觀點 總經 就業 勞動市場 非農"><summary class="card-head"><span class="card-title">就業市場</span><span class="card-side"><span class="datechip">07/24</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
+<p>09.00 市場觀點追蹤 · <a class="wl" data-t="c157" href="#c157">股市估值與獲利</a> · <a class="wl" data-t="c153" href="#c153">景氣循環定位</a> · <a class="wl" data-t="c156" href="#c156">聯準會利率路徑與通膨</a></p></div></details><details class="card" id="c150" data-s="就業市場  卡片盒 市場觀點 總經 就業 勞動市場 非農"><summary class="card-head"><span class="card-title">就業市場</span><span class="card-side"><span class="datechip">07/24</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
 <p>追蹤美國勞動市場的強弱——它是消費的引擎，也是聯準會雙重使命（就業＋物價）的一半。就業由強轉弱，往往是景氣轉折最早的訊號之一。核心問題：<strong>就業是「健康的穩」、還是「降溫前的最後強勁」？</strong></p>
 <h2>觀察軸（事實·依日期）</h2>
 <div class="tw"><table>
@@ -15305,9 +16486,9 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 </table></div>
 <h2>我的觀點〔草稿，待我修改〕</h2>
 <p><strong>分析框架——讀就業看三項：①增速（非農 vs 約 +100K 的損益兩平線）②失業率方向（升或穩）③薪資 vs 通膨（薪資領先服務業通膨）。再加一個品質維度：增長的「廣度」夠不夠分散。</strong>
-- 表面強勁：+172K 大幅超預期、失業率穩在 4.3%、前兩月還上修——硬數據看，勞動市場仍有韌性，支持 <a class="wl" data-t="c138" href="#c138">景氣循環定位</a> 的擴張定性。
-- 但有兩個要盯的雜訊：①增長集中在休閒餐旅、地方政府、醫療，廣度偏窄（製造業僅 +7K），不是全面開花；②薪資年增 3.4% 仍略高於 Fed 舒適區，會讓服務業通膨更黏——這直接餵養 <a class="wl" data-t="c141" href="#c141">聯準會利率路徑與通膨</a> 的鷹派底氣。
-- 連動鏈：就業穩→消費撐→成長續（<a class="wl" data-t="c139" href="#c139">經濟成長動能</a>），但也讓 Fed 沒有降息急迫性。對利率敏感資產而言，「就業太好」短期反而不是好消息。
+- 表面強勁：+172K 大幅超預期、失業率穩在 4.3%、前兩月還上修——硬數據看，勞動市場仍有韌性，支持 <a class="wl" data-t="c153" href="#c153">景氣循環定位</a> 的擴張定性。
+- 但有兩個要盯的雜訊：①增長集中在休閒餐旅、地方政府、醫療，廣度偏窄（製造業僅 +7K），不是全面開花；②薪資年增 3.4% 仍略高於 Fed 舒適區，會讓服務業通膨更黏——這直接餵養 <a class="wl" data-t="c156" href="#c156">聯準會利率路徑與通膨</a> 的鷹派底氣。
+- 連動鏈：就業穩→消費撐→成長續（<a class="wl" data-t="c154" href="#c154">經濟成長動能</a>），但也讓 Fed 沒有降息急迫性。對利率敏感資產而言，「就業太好」短期反而不是好消息。
 - <strong>起手判斷</strong>：基準＝「勞動市場韌性、但增長廣度收斂」。真正的轉折訊號要看「初領失業金跳升＋非農連續低於 100K」，目前都還沒出現。</p>
 <h2>後續追蹤</h2>
 <ul>
@@ -15316,7 +16497,7 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <li>就業增長的產業廣度是否擴大或進一步收窄。</li>
 </ul>
 <h2>延伸連結</h2>
-<p>09.00 市場觀點追蹤 · <a class="wl" data-t="c138" href="#c138">景氣循環定位</a> · <a class="wl" data-t="c139" href="#c139">經濟成長動能</a> · <a class="wl" data-t="c141" href="#c141">聯準會利率路徑與通膨</a></p></div></details><details class="card" id="c144" data-s="金控獲利與配息  卡片盒 市場觀點 金融 金控 配息"><summary class="card-head"><span class="card-title">金控獲利與配息</span><span class="card-side"><span class="datechip">07/24</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
+<p>09.00 市場觀點追蹤 · <a class="wl" data-t="c153" href="#c153">景氣循環定位</a> · <a class="wl" data-t="c154" href="#c154">經濟成長動能</a> · <a class="wl" data-t="c156" href="#c156">聯準會利率路徑與通膨</a></p></div></details><details class="card" id="c159" data-s="金控獲利與配息  卡片盒 市場觀點 金融 金控 配息"><summary class="card-head"><span class="card-title">金控獲利與配息</span><span class="card-side"><span class="datechip">07/24</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
 <p>2026 上半年台灣金控獲利大爆發，券商、壽險子公司領軍，配息動能轉強。核心問題：<strong>獲利來自結構性改善、還是資本市場熱絡的循環性紅利？殖利率 4% 是否可持續？</strong></p>
 <h2>觀察軸（事實·依日期）</h2>
 <div class="tw"><table>
@@ -15374,7 +16555,7 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <p><strong>分析框架——金控獲利拆解：①利差(銀行) ②手續費(財管/券商) ③資本利得與避險損益(壽險)。</strong>
 - 這波獲利集中在 <em>證券(+210%)＋壽險(+137%)</em>，明顯是「資本市場熱絡」的循環性貢獻，與成交量、股債評價高度相關——景氣好就好，回檔就縮。本質上<strong>不是穩定的利差成長</strong>。
 - 對「殖利率 4%」要拆：配息來源若靠資本利得（已實現），明年市場轉弱時配息動能會下滑，殖利率不可線性外推。
-- 對我的工作（財管）有用：券商手續費爆發＝成交量大＝客戶交易活躍，與 <a class="wl" data-t="c134" href="#c134">外資買賣超與融資風險</a> 的散戶槓桿現象呼應。
+- 對我的工作（財管）有用：券商手續費爆發＝成交量大＝客戶交易活躍，與 <a class="wl" data-t="c149" href="#c149">外資買賣超與融資風險</a> 的散戶槓桿現象呼應。
 - 治理風險：國泰世華董座請辭提醒——金融股「黑天鵝」常來自治理/關係人，而非財報。
 - <strong>起手判斷</strong>：金控短期獲利亮眼但循環性高，挑「利差/財管佔比高、對市場 beta 低」的較抗跌；把 4% 殖利率當上緣而非保證。</p>
 <h2>後續追蹤</h2>
@@ -15384,7 +16565,7 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <li>各金控股利政策公告 vs 殖利率預期落差。</li>
 </ul>
 <h2>延伸連結</h2>
-<p><a class="wl" data-t="c134" href="#c134">外資買賣超與融資風險</a> · <a class="wl" data-t="c140" href="#c140">美元走強與台幣保衛戰</a> · <a class="wl" data-t="c59" href="#c59">基金避險成本計算方式</a></p></div></details><details class="card" id="c137" data-s="日圓匯率分析  卡片盒 市場觀點 匯率 日圓 總經"><summary class="card-head"><span class="card-title">日圓匯率分析</span><span class="card-side"><span class="datechip">07/23</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
+<p><a class="wl" data-t="c149" href="#c149">外資買賣超與融資風險</a> · <a class="wl" data-t="c155" href="#c155">美元走強與台幣保衛戰</a> · <a class="wl" data-t="c59" href="#c59">基金避險成本計算方式</a></p></div></details><details class="card" id="c152" data-s="日圓匯率分析  卡片盒 市場觀點 匯率 日圓 總經"><summary class="card-head"><span class="card-title">日圓匯率分析</span><span class="card-side"><span class="datechip">07/23</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
 <p>日本央行已把利率升到 1995 年以來最高的 1.0%，但日圓仍貶到約 40 年低點（美元兌日圓 162 之上、日圓兌台幣約 0.197），投機空單創 19 年新高，市場緊盯 165 的干預防線。核心問題：<strong>BOJ 升息為何救不了日圓？這是套利交易主導的超貶、還是日本財政與利差結構的長期趨勢？</strong></p>
 <h2>觀察軸（事實·依日期）</h2>
 <div class="tw"><table>
@@ -15437,9 +16618,9 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <p><strong>分析框架——匯率看三力：利差(Fed vs BOJ)、經常帳(能源進口)、資金流(套利交易)。</strong>
 - 這波日圓貶值的主因是 <em>利差絕對水準</em>，不是方向：BOJ 升到 1.0%、Fed 仍在 4% 以上，套利交易(借日圓買美元資產)依然划算，所以「升息但貶值」並不矛盾——市場看的是利差夠不夠窄，不是有沒有升息。
 - 空單創 19 年新高是雙面刃：一方面反映貶值共識極強，另一方面若日本當局在 165 附近突襲干預，<em>擁擠的空單會被迫回補</em>，日圓可能出現急升（參考 2024 年 7 月干預後的軋空）。愈接近 165，追空的風險報酬愈差。
-- 日本進口能源依賴中東，地緣風險（見 <a class="wl" data-t="c133" href="#c133">地緣風險美伊衝突</a>）推高油價會惡化經常帳，是日圓的額外壓力源。
+- 日本進口能源依賴中東，地緣風險（見 <a class="wl" data-t="c148" href="#c148">地緣風險美伊衝突</a>）推高油價會惡化經常帳，是日圓的額外壓力源。
 - 對台灣的意義：日圓兌台幣約 0.197，處在歷史便宜區——換匯旅遊與日股（未避險）成本低；但要分清「便宜」不等於「會漲」，催化劑要等 <em>Fed 降息收斂利差</em> 或 <em>日本干預／BOJ 再升息</em>。
-- <strong>起手判斷</strong>：短線偏貶但下檔（日圓再貶空間）有限，165 是政策防線；中期若 Fed 轉向，日圓是主要貨幣中反彈彈性最大的。與 <a class="wl" data-t="c140" href="#c140">美元走強與台幣保衛戰</a> 同屬「強美元」這枚硬幣的兩面。</p>
+- <strong>起手判斷</strong>：短線偏貶但下檔（日圓再貶空間）有限，165 是政策防線；中期若 Fed 轉向，日圓是主要貨幣中反彈彈性最大的。與 <a class="wl" data-t="c155" href="#c155">美元走強與台幣保衛戰</a> 同屬「強美元」這枚硬幣的兩面。</p>
 <h2>後續追蹤</h2>
 <ul>
 <li>日本財務省口頭警告升級與實際干預動作（165 防線）。</li>
@@ -15448,7 +16629,7 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <li>美日 10 年期公債利差走勢（套利交易的燃料）。</li>
 </ul>
 <h2>延伸連結</h2>
-<p><a class="wl" data-t="c140" href="#c140">美元走強與台幣保衛戰</a> · <a class="wl" data-t="c141" href="#c141">聯準會利率路徑與通膨</a> · <a class="wl" data-t="c130" href="#c130">債市殖利率與利差</a> · <a class="wl" data-t="c133" href="#c133">地緣風險美伊衝突</a></p></div></details><details class="card" id="c127" data-s="ai伺服器與cowos先進封裝  卡片盒 市場觀點 半導體 ai cowos 台積電"><summary class="card-head"><span class="card-title">AI伺服器與CoWoS先進封裝</span><span class="card-side"><span class="datechip">07/17</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
+<p><a class="wl" data-t="c155" href="#c155">美元走強與台幣保衛戰</a> · <a class="wl" data-t="c156" href="#c156">聯準會利率路徑與通膨</a> · <a class="wl" data-t="c145" href="#c145">債市殖利率與利差</a> · <a class="wl" data-t="c148" href="#c148">地緣風險美伊衝突</a></p></div></details><details class="card" id="c142" data-s="ai伺服器與cowos先進封裝  卡片盒 市場觀點 半導體 ai cowos 台積電"><summary class="card-head"><span class="card-title">AI伺服器與CoWoS先進封裝</span><span class="card-side"><span class="datechip">07/17</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
 <p>AI 加速器需求暴增，台積電 CoWoS 先進封裝成為供應鏈關鍵瓶頸（市佔約 95%），美系晶片廠高度依賴台灣。核心問題：<strong>先進封裝的瓶頸地位是台灣的護城河、還是地緣脆弱點？</strong></p>
 <h2>觀察軸（事實·依日期）</h2>
 <div class="tw"><table>
@@ -15506,8 +16687,8 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <p><strong>分析框架——供應鏈瓶頸分析：找「替代彈性最低、議價權最高」的環節，那裡賺最久。</strong>
 - CoWoS 是目前 AI 硬體鏈中替代彈性最低的環節（95% 市佔、擴產要時間）——這是台積電與台廠（日月光、載板、CPO）的結構性受惠點，且比晶片設計端更不易被取代。
 - 這同時是 <em>護城河</em> 與 <em>地緣脆弱點</em>：美國想分散卻被封裝卡住（連到地緣政治風險），等於台灣在 AI 鏈的戰略籌碼，但也讓台股對「台海風險」更敏感。
-- 與 <a class="wl" data-t="c143" href="#c143">記憶體超級循環</a> 是 AI 硬體的兩大瓶頸（記憶體＋封裝），可一起追蹤——兩者同時緊俏，代表 AI 實體投資仍在擴張期。
-- 風險：若 <a class="wl" data-t="c128" href="#c128">AI投資ROI質疑與行情分歧</a> 導致雲端廠縮減資本支出，封裝/記憶體是最早反映訂單下修的環節。
+- 與 <a class="wl" data-t="c158" href="#c158">記憶體超級循環</a> 是 AI 硬體的兩大瓶頸（記憶體＋封裝），可一起追蹤——兩者同時緊俏，代表 AI 實體投資仍在擴張期。
+- 風險：若 <a class="wl" data-t="c143" href="#c143">AI投資ROI質疑與行情分歧</a> 導致雲端廠縮減資本支出，封裝/記憶體是最早反映訂單下修的環節。
 - <strong>起手判斷</strong>：結構性看多台灣先進封裝供應鏈，視為 AI 主題中「確定性較高」的一段；但要把它與 AI 資本支出週期綁在一起看，非永動機。</p>
 <h2>後續追蹤</h2>
 <ul>
@@ -15516,8 +16697,8 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <li>美系客戶（OpenAI、Nvidia、安森美）自研/分散供應鏈進度。</li>
 </ul>
 <h2>延伸連結</h2>
-<p><a class="wl" data-t="c143" href="#c143">記憶體超級循環</a> · <a class="wl" data-t="c128" href="#c128">AI投資ROI質疑與行情分歧</a> · <a class="wl" data-t="c62" href="#c62">台積電對台股指數影響</a> · <a class="wl" data-t="c60" href="#c60">台股AI族群分類</a></p></div></details><details class="card" id="c139" data-s="經濟成長動能  卡片盒 市場觀點 總經 經濟成長 gdp"><summary class="card-head"><span class="card-title">經濟成長動能</span><span class="card-side"><span class="datechip">07/16</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
-<p>追蹤美國經濟成長的「速度與方向」——GDP 是在加速還是減速、成長的引擎是誰。這支撐 <a class="wl" data-t="c138" href="#c138">景氣循環定位</a> 的硬數據判斷。核心問題：<strong>成長是「自發性的內需強」，還是靠淨出口、補庫存等一次性項目撐起來的？</strong></p>
+<p><a class="wl" data-t="c158" href="#c158">記憶體超級循環</a> · <a class="wl" data-t="c143" href="#c143">AI投資ROI質疑與行情分歧</a> · <a class="wl" data-t="c62" href="#c62">台積電對台股指數影響</a> · <a class="wl" data-t="c60" href="#c60">台股AI族群分類</a></p></div></details><details class="card" id="c154" data-s="經濟成長動能  卡片盒 市場觀點 總經 經濟成長 gdp"><summary class="card-head"><span class="card-title">經濟成長動能</span><span class="card-side"><span class="datechip">07/16</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
+<p>追蹤美國經濟成長的「速度與方向」——GDP 是在加速還是減速、成長的引擎是誰。這支撐 <a class="wl" data-t="c153" href="#c153">景氣循環定位</a> 的硬數據判斷。核心問題：<strong>成長是「自發性的內需強」，還是靠淨出口、補庫存等一次性項目撐起來的？</strong></p>
 <h2>觀察軸（事實·依日期）</h2>
 <div class="tw"><table>
 <thead>
@@ -15559,7 +16740,7 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <p><strong>分析框架——讀 GDP 看三層：①水準 vs 趨勢（高於或低於潛在成長 ~1.8%）②組成（是內需消費，還是淨出口／庫存等一次性）③動能方向（連續季加速或減速）。表面數字會騙人，組成才是真相。</strong>
 - 動能方向轉佳：Q1 2.1% 較 Q4 的 0.5% 明顯回升，且第三估從 1.6% 上修到 2.1%，代表底層比中途估計更穩。
 - 但要打折看：Q1 上修「主因進口下修」——淨出口的改善有一次性成分，不全是內需走強。所以我不會把 2.1% 直接當成「需求很熱」。
-- 與其他卡對照：成長回到 2% 上下、配合 <a class="wl" data-t="c138" href="#c138">景氣循環定位</a> 的 PMI 54 與 <a class="wl" data-t="c135" href="#c135">就業市場</a> 的穩健，整體拼圖一致指向「擴張續行」，這也合理化 <a class="wl" data-t="c141" href="#c141">聯準會利率路徑與通膨</a> 的 Fed 不急著降息。
+- 與其他卡對照：成長回到 2% 上下、配合 <a class="wl" data-t="c153" href="#c153">景氣循環定位</a> 的 PMI 54 與 <a class="wl" data-t="c150" href="#c150">就業市場</a> 的穩健，整體拼圖一致指向「擴張續行」，這也合理化 <a class="wl" data-t="c156" href="#c156">聯準會利率路徑與通膨</a> 的 Fed 不急著降息。
 - <strong>起手判斷</strong>：基準＝「溫和擴張、略高於潛在成長」。要確認動能真假，下一個關鍵是 Q2，特別是「消費」這個最大引擎能否頂住。</p>
 <h2>後續追蹤</h2>
 <ul>
@@ -15568,7 +16749,7 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <li>實質消費支出、零售銷售月增動能。</li>
 </ul>
 <h2>延伸連結</h2>
-<p>09.00 市場觀點追蹤 · <a class="wl" data-t="c138" href="#c138">景氣循環定位</a> · <a class="wl" data-t="c135" href="#c135">就業市場</a> · <a class="wl" data-t="c141" href="#c141">聯準會利率路徑與通膨</a></p></div></details><details class="card" id="c129" data-s="亞洲資產管理中心  卡片盒 市場觀點 財富管理 資產管理 人才 ai應用"><summary class="card-head"><span class="card-title">亞洲資產管理中心</span><span class="card-side"><span class="datechip">07/15</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
+<p>09.00 市場觀點追蹤 · <a class="wl" data-t="c153" href="#c153">景氣循環定位</a> · <a class="wl" data-t="c150" href="#c150">就業市場</a> · <a class="wl" data-t="c156" href="#c156">聯準會利率路徑與通膨</a></p></div></details><details class="card" id="c144" data-s="亞洲資產管理中心  卡片盒 市場觀點 財富管理 資產管理 人才 ai應用"><summary class="card-head"><span class="card-title">亞洲資產管理中心</span><span class="card-side"><span class="datechip">07/15</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
 <p>金管會推動台灣成為亞洲資產管理中心，喊出 2030 年資產管理規模翻倍至 60 兆。核心問題：<strong>台灣憑什麼突圍（vs 新加坡/香港）？「留才引資」的缺口在哪？對本土銀行財管業務是機會還是被外商壓縮？</strong></p>
 <h2>觀察軸（事實·依日期）</h2>
 <div class="tw"><table>
@@ -15630,7 +16811,7 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <li>台灣科技主題基金、PE/VC 開放進度（觀察是否真能把半導體資訊優勢變成商品）。</li>
 </ul>
 <h2>延伸連結</h2>
-<p><a class="wl" data-t="c144" href="#c144">金控獲利與配息</a> · <a class="wl" data-t="c143" href="#c143">記憶體超級循環</a> · 財富傳承自學系統</p></div></details><details class="card" id="c138" data-s="景氣循環定位  卡片盒 市場觀點 總經 景氣循環 領先指標 pmi 殖利率曲線"><summary class="card-head"><span class="card-title">景氣循環定位</span><span class="card-side"><span class="datechip">07/13</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
+<p><a class="wl" data-t="c159" href="#c159">金控獲利與配息</a> · <a class="wl" data-t="c158" href="#c158">記憶體超級循環</a> · 財富傳承自學系統</p></div></details><details class="card" id="c153" data-s="景氣循環定位  卡片盒 市場觀點 總經 景氣循環 領先指標 pmi 殖利率曲線"><summary class="card-head"><span class="card-title">景氣循環定位</span><span class="card-side"><span class="datechip">07/13</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
 <p>判斷美國經濟現在站在景氣循環（擴張／趨緩／衰退／復甦）的哪一階段。這是所有資產配置判斷的「地基」——先知道在循環的哪裡，才知道該偏股、偏債、還是保守。核心問題：<strong>目前的硬數據與領先指標，是支持「續強擴張」、還是已在為「轉折降溫」鋪路？</strong></p>
 <h2>觀察軸（事實·依日期）</h2>
 <div class="tw"><table>
@@ -15672,7 +16853,7 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <h2>我的觀點〔草稿，待我修改〕</h2>
 <p><strong>分析框架——景氣循環定位看三支柱：①硬數據（PMI、GDP、就業）現在多強 ②領先指標（殖利率曲線、新訂單）預告未來 ③市場定價是否已反映。三者一致才敢下定位，分歧時以領先指標為重。</strong>
 - 現況偏「擴張中後段」：PMI 54 是 2022 年來最強，屬實打實的硬數據強勁；而殖利率曲線翻正、未倒掛，領先指標未發出衰退預警。兩支柱方向一致 → 短期衰退機率低。
-- 但要分清「強」與「過熱」：PMI 強＋對應 2.2% GDP，配上 <a class="wl" data-t="c141" href="#c141">聯準會利率路徑與通膨</a> 的核心 PCE 3.4%，意味著「經濟夠熱到通膨黏著」——這正是 Fed 轉鷹的底氣。景氣強反而可能延後降息。
+- 但要分清「強」與「過熱」：PMI 強＋對應 2.2% GDP，配上 <a class="wl" data-t="c156" href="#c156">聯準會利率路徑與通膨</a> 的核心 PCE 3.4%，意味著「經濟夠熱到通膨黏著」——這正是 Fed 轉鷹的底氣。景氣強反而可能延後降息。
 - 殖利率曲線是這張卡最該盯的領先指標：它「倒掛→翻正」的過程歷史上常領先衰退 18–92 週，所以<strong>翻正不代表警報解除</strong>，反而要留意翻正後的斜率變化。目前 +0.31% 仍偏平。
 - <strong>起手判斷</strong>：基準情境＝「擴張續行、但接近成熟」。配置上股優於債仍成立，但對「景氣轉折」的領先訊號（新訂單轉弱、初領失業金跳升、曲線再度走平）保持警覺，那會是降評風險資產的第一個訊號。</p>
 <h3>我的判斷（2026-06-30）</h3>
@@ -15681,15 +16862,15 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 - <strong>領先指標說擴張續行</strong>：①殖利率曲線尚未倒掛——最可靠的衰退領先指標沒發警報；②ISM PMI 54 仍強勁且在加速 → 動能未盡。
 - <strong>我刻意折讓的落後訊號</strong>：失業率／就業是落後指標，即使增長廣度收斂，也不該用來判斷「現在站在循環哪裡」。
 - <strong>我保留為「觀察點」（不當定性）</strong>：曲線是 2022–2024 倒掛後翻正的，這個轉折要持續追蹤；PMI 54 已是 2022 來高點，留意是否接近循環頂。列為轉折訊號，但不足以現在叫它末段。
-- <strong>與配置的銜接</strong>：擴張中期＝風險資產基本面仍在；但估值面（<a class="wl" data-t="c145" href="#c145">風險溢酬與相對估值</a>、<a class="wl" data-t="c136" href="#c136">市場情緒與籌碼</a>）讓我不重押——<strong>基本面與估值分開判斷</strong>。</p>
+- <strong>與配置的銜接</strong>：擴張中期＝風險資產基本面仍在；但估值面（<a class="wl" data-t="c160" href="#c160">風險溢酬與相對估值</a>、<a class="wl" data-t="c151" href="#c151">市場情緒與籌碼</a>）讓我不重押——<strong>基本面與估值分開判斷</strong>。</p>
 <h2>後續追蹤</h2>
 <ul>
 <li>下一份 ISM 製造業 PMI（2026-07-01 公布）是否守住 50 擴張線、新訂單動能。</li>
 <li>10Y-2Y 利差斜率變化（走陡＝復甦訊號／再走平＝晚循環警訊）。</li>
-<li>初領失業金、非農——勞動市場是否由強轉弱（接 <a class="wl" data-t="c141" href="#c141">聯準會利率路徑與通膨</a>）。</li>
+<li>初領失業金、非農——勞動市場是否由強轉弱（接 <a class="wl" data-t="c156" href="#c156">聯準會利率路徑與通膨</a>）。</li>
 </ul>
 <h2>延伸連結</h2>
-<p>09.00 市場觀點追蹤 · <a class="wl" data-t="c141" href="#c141">聯準會利率路徑與通膨</a> · <a class="wl" data-t="c140" href="#c140">美元走強與台幣保衛戰</a></p></div></details><details class="card" id="c134" data-s="外資買賣超與融資風險  卡片盒 市場觀點 台股 資金面 外資 融資"><summary class="card-head"><span class="card-title">外資買賣超與融資風險</span><span class="card-side"><span class="datechip">07/11</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
+<p>09.00 市場觀點追蹤 · <a class="wl" data-t="c156" href="#c156">聯準會利率路徑與通膨</a> · <a class="wl" data-t="c155" href="#c155">美元走強與台幣保衛戰</a></p></div></details><details class="card" id="c149" data-s="外資買賣超與融資風險  卡片盒 市場觀點 台股 資金面 外資 融資"><summary class="card-head"><span class="card-title">外資買賣超與融資風險</span><span class="card-side"><span class="datechip">07/11</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
 <p>外資創紀錄提款，同時散戶積極買進槓桿型 ETF、疊加多層信用（房貸＋企業貸＋融資的「六貸同堂」），違約交割開始浮現。核心問題：<strong>散戶槓桿是壓垮回調的隱形風險，還是落底的反向情緒指標？</strong></p>
 <h2>觀察軸（事實·依日期）</h2>
 <div class="tw"><table>
@@ -15751,7 +16932,7 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <li>外資現貨買賣超是否由賣轉買、淨空單回補延續性。</li>
 </ul>
 <h2>延伸連結</h2>
-<p><a class="wl" data-t="c132" href="#c132">國家隊進場與台股系統性回調</a> · <a class="wl" data-t="c140" href="#c140">美元走強與台幣保衛戰</a> · <a class="wl" data-t="c144" href="#c144">金控獲利與配息</a> · <a class="wl" data-t="c52" href="#c52">台股市場</a></p></div></details><details class="card" id="c136" data-s="市場情緒與籌碼  卡片盒 市場觀點 估值 市場情緒 籌碼 反向指標"><summary class="card-head"><span class="card-title">市場情緒與籌碼</span><span class="card-side"><span class="datechip">06/29</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
+<p><a class="wl" data-t="c147" href="#c147">國家隊進場與台股系統性回調</a> · <a class="wl" data-t="c155" href="#c155">美元走強與台幣保衛戰</a> · <a class="wl" data-t="c159" href="#c159">金控獲利與配息</a> · <a class="wl" data-t="c52" href="#c52">台股市場</a></p></div></details><details class="card" id="c151" data-s="市場情緒與籌碼  卡片盒 市場觀點 估值 市場情緒 籌碼 反向指標"><summary class="card-head"><span class="card-title">市場情緒與籌碼</span><span class="card-side"><span class="datechip">06/29</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
 <p>量化「市場現在在想什麼」。情緒與籌碼多半是<strong>反向指標</strong>——極端恐懼常出現在相對低點、極端貪婪常出現在相對高點。工具：CNN 恐懼貪婪指數（市場行為派）、AAII 散戶調查（意見調查派）、資金流向、部位擁擠度。核心問題：<strong>現在是該貪婪的恐懼、還是該恐懼的貪婪？</strong></p>
 <h2>觀察軸（事實·依日期）</h2>
 <div class="tw"><table>
@@ -15784,11 +16965,11 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <p><strong>分析框架——情緒當反向參考：①極端值才有用（中間值是雜訊）②多個情緒指標要交叉看，分歧時更要小心 ③情緒只是輔助，最終仍要回到估值與基本面。情緒告訴你「賠率」，基本面告訴你「勝率」。</strong>
 - 當前最有意思的是<strong>分歧</strong>：CNN 恐懼貪婪 25（市場行為顯示恐懼）vs AAII 散戶看多 44.9%（嘴上偏樂觀）。一個用價格/波動/廣度算、一個用問卷問——兩者打架。
 - 我的解讀：市場「用腳投票」在恐懼（賣壓、避險），但散戶「用嘴投票」還樂觀。歷史上這種組合要小心——散戶的樂觀還沒被價格教訓過，下檔不一定見底。
-- 反向偏多的條件未滿足：恐懼貪婪 25 本身偏向「逆勢偏多」（恐懼=機會），但要搭配 <a class="wl" data-t="c145" href="#c145">風險溢酬與相對估值</a> 的便宜才算數，而現在 ERP 僅 0.6%、估值偏貴——<strong>情緒恐懼但估值不便宜，逆勢買進的安全邊際不足</strong>。
+- 反向偏多的條件未滿足：恐懼貪婪 25 本身偏向「逆勢偏多」（恐懼=機會），但要搭配 <a class="wl" data-t="c160" href="#c160">風險溢酬與相對估值</a> 的便宜才算數，而現在 ERP 僅 0.6%、估值偏貴——<strong>情緒恐懼但估值不便宜，逆勢買進的安全邊際不足</strong>。
 - <strong>起手判斷</strong>：把恐懼貪婪指數當「賠率溫度計」，極度恐懼（&lt;20）才考慮逆勢加碼，且必須估值同步轉便宜；目前 25＋貴估值，維持中性、不急著抄底。</p>
 <h3>我的判斷（2026-06-29）</h3>
 <p>目前不會加碼。恐懼貪婪指數 25 顯示市場在恐懼、逆向法則會說「該貪婪」，但我不照單全收。
-- <strong>理由一：估值仍過高。</strong> 光有恐懼不夠。估值沒便宜（呼應 <a class="wl" data-t="c145" href="#c145">風險溢酬與相對估值</a>：ERP 僅 0.6%），逆勢買進的安全邊際不足。一句心法：<strong>情緒給賠率、估值給勝率，兩個要同時站在我這邊。</strong>
+- <strong>理由一：估值仍過高。</strong> 光有恐懼不夠。估值沒便宜（呼應 <a class="wl" data-t="c160" href="#c160">風險溢酬與相對估值</a>：ERP 僅 0.6%），逆勢買進的安全邊際不足。一句心法：<strong>情緒給賠率、估值給勝率，兩個要同時站在我這邊。</strong>
 - <strong>理由二：波動度大。</strong> 高波動本身就是恐懼讀數的來源；在價格與波動還沒穩定前搶進，等於接還在掉的刀。
 - <strong>會讓我開始加碼的條件</strong>：①恐懼貪婪指數進入極度恐懼（&lt;20）＋②估值同步轉便宜（ERP 擴大／前瞻 PE 回落）＋③波動度收斂。至少要「極端恐懼＋估值轉便宜」同時出現，恐懼才是機會。</p>
 <h2>後續追蹤</h2>
@@ -15798,7 +16979,7 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <li>資金流向、選擇權 put/call 比等籌碼面補充。</li>
 </ul>
 <h2>延伸連結</h2>
-<p>09.00 市場觀點追蹤 · <a class="wl" data-t="c145" href="#c145">風險溢酬與相對估值</a> · <a class="wl" data-t="c142" href="#c142">股市估值與獲利</a> · <a class="wl" data-t="c134" href="#c134">外資買賣超與融資風險</a></p></div></details><details class="card" id="c142" data-s="股市估值與獲利  卡片盒 市場觀點 股市 估值 獲利 本益比"><summary class="card-head"><span class="card-title">股市估值與獲利</span><span class="card-side"><span class="datechip">06/29</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
+<p>09.00 市場觀點追蹤 · <a class="wl" data-t="c160" href="#c160">風險溢酬與相對估值</a> · <a class="wl" data-t="c157" href="#c157">股市估值與獲利</a> · <a class="wl" data-t="c149" href="#c149">外資買賣超與融資風險</a></p></div></details><details class="card" id="c157" data-s="股市估值與獲利  卡片盒 市場觀點 股市 估值 獲利 本益比"><summary class="card-head"><span class="card-title">股市估值與獲利</span><span class="card-side"><span class="datechip">06/29</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
 <p>學會用股市自己的語言定價：<strong>股價 ≈ 獲利（EPS）× 估值（本益比 P/E）</strong>。上漲到底是「公司賺更多」還是「市場願意付更貴」，這兩者的續航力完全不同。核心問題：<strong>目前美股的高位，是獲利撐起來的、還是估值灌出來的？</strong></p>
 <h2>觀察軸（事實·依日期）</h2>
 <div class="tw"><table>
@@ -15836,13 +17017,13 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <p><strong>分析框架——讀股市拆三件事：①獲利方向（成長預估在上修或下修）②估值水準（前瞻 P/E vs 歷史區間，現在站哪個百分位）③漲勢的引擎（是 re-rating 估值擴張，還是 EPS 實質成長）。獲利撐的漲較耐久，估值灌的漲較脆。</strong>
 - 現況「貴、但有獲利撐」：前瞻 P/E 20.1 高於 5/10 年均，不算便宜；但 2026 獲利估 +24% 強勁，所以高估值有基本面靠山，不是純炒。
 - 關鍵落差：trailing 25 vs forward 20，這個缺口正是「市場已先反映明年獲利大跳增」。<strong>風險就在這</strong>——一旦獲利不如預期，20 倍的估值沒有安全墊，回檔會又快又深。
-- 跨卡連動：強獲利的底氣來自 <a class="wl" data-t="c139" href="#c139">經濟成長動能</a> 與 <a class="wl" data-t="c135" href="#c135">就業市場</a> 的韌性；但 <a class="wl" data-t="c141" href="#c141">聯準會利率路徑與通膨</a> 的高利率會壓抑估值擴張。所以美股是「獲利在拉、估值被綁」的拉鋸。
-- 台股應用：同一框架套 <a class="wl" data-t="c132" href="#c132">國家隊進場與台股系統性回調</a>、<a class="wl" data-t="c128" href="#c128">AI投資ROI質疑與行情分歧</a>——分辨台股這波是 AI 獲利兌現，還是本夢比擴張。
+- 跨卡連動：強獲利的底氣來自 <a class="wl" data-t="c154" href="#c154">經濟成長動能</a> 與 <a class="wl" data-t="c150" href="#c150">就業市場</a> 的韌性；但 <a class="wl" data-t="c156" href="#c156">聯準會利率路徑與通膨</a> 的高利率會壓抑估值擴張。所以美股是「獲利在拉、估值被綁」的拉鋸。
+- 台股應用：同一框架套 <a class="wl" data-t="c147" href="#c147">國家隊進場與台股系統性回調</a>、<a class="wl" data-t="c143" href="#c143">AI投資ROI質疑與行情分歧</a>——分辨台股這波是 AI 獲利兌現，還是本夢比擴張。
 - <strong>起手判斷</strong>：偏多但挑剔，重點放「獲利能否兌現預估」而非追估值；獲利上修的族群優於純評價重估的族群。</p>
 <h3>我的判斷（2026-06-30，依 6/29 盤後）</h3>
 <p>6/29 是「殖利率跌破 4.5% ＋ 油跌 ＋ 科技噴」的風險偏好日（S&amp;P +1.18%、Nasdaq +2.07%）。我的讀法：
-- <strong>主導力量＝科技股氛圍帶動的風險偏好回升</strong>，不是基本面突變。今年受川普政策反覆影響、波動大；雲端大廠資本支出持續上調、LLM 變現漸明，但投資人對 AI 巨額融資需求與變現能力的檢視也更嚴格（雙面，見 <a class="wl" data-t="c128" href="#c128">AI投資ROI質疑與行情分歧</a>）。
-- <strong>殖利率跌破 4.5% 的解讀</strong>：反映美伊戰事和緩＋通膨預期下滑。但實際通膨仍要追蹤——AI 投資造成的供應鏈通膨＋逆全球化成本，讓電子與民生消費成本呈現顯著黏性（見 <a class="wl" data-t="c141" href="#c141">聯準會利率路徑與通膨</a>）。
+- <strong>主導力量＝科技股氛圍帶動的風險偏好回升</strong>，不是基本面突變。今年受川普政策反覆影響、波動大；雲端大廠資本支出持續上調、LLM 變現漸明，但投資人對 AI 巨額融資需求與變現能力的檢視也更嚴格（雙面，見 <a class="wl" data-t="c143" href="#c143">AI投資ROI質疑與行情分歧</a>）。
+- <strong>殖利率跌破 4.5% 的解讀</strong>：反映美伊戰事和緩＋通膨預期下滑。但實際通膨仍要追蹤——AI 投資造成的供應鏈通膨＋逆全球化成本，讓電子與民生消費成本呈現顯著黏性（見 <a class="wl" data-t="c156" href="#c156">聯準會利率路徑與通膨</a>）。
 - <strong>條件式框架</strong>：①成長優於預期 → 不擔心較高的 PCE；②AI 效益不如預期 ＋ 通膨短期下不來 → 停滯性通膨疑慮。
 - <strong>目前基準</strong>：維持樂觀偏多——因美股企業獲利仍不斷上修、展望樂觀（延續本卡「賭獲利成長＞估值重評」）。
 - <strong>自我提醒（論點風險集中）</strong>：我的多頭、對通膨的安心、「沒有停滯性通膨」三個判斷都壓在「AI 獲利持續上修」這同一根柱子上；而 AI 資本支出同時是獲利引擎、也是供應鏈通膨來源。<strong>最該盯死的單一訊號＝AI 獲利上修是否延續</strong>，它一鬆全部一起鬆。</p>
@@ -15853,7 +17034,7 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <li>台股加權指數本益比與電子權值股獲利動能。</li>
 </ul>
 <h2>延伸連結</h2>
-<p>09.00 市場觀點追蹤 · <a class="wl" data-t="c130" href="#c130">債市殖利率與利差</a> · <a class="wl" data-t="c139" href="#c139">經濟成長動能</a> · <a class="wl" data-t="c141" href="#c141">聯準會利率路徑與通膨</a> · <a class="wl" data-t="c128" href="#c128">AI投資ROI質疑與行情分歧</a></p></div></details><details class="card" id="c145" data-s="風險溢酬與相對估值  卡片盒 市場觀點 估值 風險溢酬 erp 相對估值"><summary class="card-head"><span class="card-title">風險溢酬與相對估值</span><span class="card-side"><span class="datechip">06/29</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
+<p>09.00 市場觀點追蹤 · <a class="wl" data-t="c145" href="#c145">債市殖利率與利差</a> · <a class="wl" data-t="c154" href="#c154">經濟成長動能</a> · <a class="wl" data-t="c156" href="#c156">聯準會利率路徑與通膨</a> · <a class="wl" data-t="c143" href="#c143">AI投資ROI質疑與行情分歧</a></p></div></details><details class="card" id="c160" data-s="風險溢酬與相對估值  卡片盒 市場觀點 估值 風險溢酬 erp 相對估值"><summary class="card-head"><span class="card-title">風險溢酬與相對估值</span><span class="card-side"><span class="datechip">06/29</span><svg class="acc-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="card-body"><h2>主題定義</h2>
 <p>從「貴或便宜」進到「相對誰貴」。兩把尺：①<strong>相對自己</strong>——估值在歷史區間的哪個百分位；②<strong>相對別人</strong>——股票相對債券的吸引力，用<strong>股債利差／股票風險溢酬（ERP）= 前瞻盈餘殖利率 − 公債殖利率</strong>衡量。核心問題：<strong>現在的股票，相對債券到底還香不香？</strong></p>
 <h2>觀察軸（事實·依日期）</h2>
 <div class="tw"><table>
@@ -15890,14 +17071,14 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <h2>我的觀點〔草稿，待我修改〕</h2>
 <p><strong>分析框架——相對估值要同時問兩句：①「比自己的歷史貴還便宜？」（看百分位，別看絕對數字）②「比其他資產划算嗎？」（股 vs 債用 ERP）。ERP 越薄＝股票相對債券越沒優勢、市場越 priced for perfection。</strong>
 - 關鍵數字是 ERP ≈ 0.6%：歷史上股票要比公債多賠付約 3% 的風險溢酬才算合理，現在只有 0.6%。意思是<strong>買股票相對買債券，幾乎沒拿到額外的風險補償</strong>——這是估值面最該警惕的訊號。
-- 怎麼解讀薄 ERP：要嘛股票太貴（<a class="wl" data-t="c142" href="#c142">股市估值與獲利</a> 前瞻 PE 20.1 偏高），要嘛債券殖利率太香（<a class="wl" data-t="c130" href="#c130">債市殖利率與利差</a> 10Y 4.38%）。兩者都成立 → <strong>資產配置上，債券的相對吸引力正在上升</strong>。
+- 怎麼解讀薄 ERP：要嘛股票太貴（<a class="wl" data-t="c157" href="#c157">股市估值與獲利</a> 前瞻 PE 20.1 偏高），要嘛債券殖利率太香（<a class="wl" data-t="c145" href="#c145">債市殖利率與利差</a> 10Y 4.38%）。兩者都成立 → <strong>資產配置上，債券的相對吸引力正在上升</strong>。
 - 但薄 ERP 不是擇時訊號：它能薄很久（只要獲利持續上修、利率下行就能化解）。它是「風險報酬比變差」的警告，不是「明天就跌」的預言。
 - <strong>起手判斷</strong>：股市維持偏多但須更挑剔（要獲利兌現撐）；債券在資產配置中的權重值得調升——這正是薄 ERP 給的相對價值訊號。</p>
 <h3>我的判斷（2026-06-29）</h3>
 <p>即使 ERP 僅 0.6%、股票相對債券幾乎沒拿到風險補償，我仍偏多股票。
 - <strong>論點</strong>：AI 發展很熱，帶動企業獲利持續上修。只要獲利（E）成長得比股價（P）重評更快，前瞻本益比就會被「長」下來、盈餘殖利率上升，薄 ERP 會從<strong>獲利端</strong>自我修復，而不必靠股價下跌。一句話：我賭的是「<strong>獲利成長 ＞ 估值重評</strong>」。
 - <strong>成立前提</strong>：AI 獲利上修必須持續。這是整個觀點的命脈。
-- <strong>會打破它的訊號</strong>：財報季 EPS 達成率不如預期、或 AI 權值股獲利預估由上修轉為下修——一旦如此，20 倍的估值沒有安全墊（呼應 <a class="wl" data-t="c142" href="#c142">股市估值與獲利</a>：前瞻 20 vs trailing 25，市場已先反映獲利大跳增），回檔會又快又深。
+- <strong>會打破它的訊號</strong>：財報季 EPS 達成率不如預期、或 AI 權值股獲利預估由上修轉為下修——一旦如此，20 倍的估值沒有安全墊（呼應 <a class="wl" data-t="c157" href="#c157">股市估值與獲利</a>：前瞻 20 vs trailing 25，市場已先反映獲利大跳增），回檔會又快又深。
 - <strong>配置含意</strong>：偏多但聚焦「獲利能持續上修」的族群；同時承認薄 ERP 的警告，用部分債券作為「萬一獲利上修停滯」的對沖。</p>
 <h2>後續追蹤</h2>
 <ul>
@@ -15906,7 +17087,7 @@ Call 價值 = 100×0.5 − 44.12 = <strong>5.88</strong>（示例，無風險利
 <li>台股加權指數本益比相對自身歷史區間。</li>
 </ul>
 <h2>延伸連結</h2>
-<p>09.00 市場觀點追蹤 · <a class="wl" data-t="c142" href="#c142">股市估值與獲利</a> · <a class="wl" data-t="c130" href="#c130">債市殖利率與利差</a> · <a class="wl" data-t="c136" href="#c136">市場情緒與籌碼</a></p></div></details></div></details></section>
+<p>09.00 市場觀點追蹤 · <a class="wl" data-t="c157" href="#c157">股市估值與獲利</a> · <a class="wl" data-t="c145" href="#c145">債市殖利率與利差</a> · <a class="wl" data-t="c151" href="#c151">市場情緒與籌碼</a></p></div></details></div></details></section>
 <footer>更新於 2026-08-01｜個人學習筆記，非投資建議</footer>
 </div>
 <script>
@@ -15966,6 +17147,24 @@ q.addEventListener('input', () => {
     if (p.querySelector('.acc-sec:not(.hidden)')) { showTab(p.dataset.tab); break; }
   }
 });
+</script>
+<script type="module">
+if (document.querySelector('pre.mermaid')) {
+  const mod = await import('https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs');
+  const mermaid = mod.default;
+  mermaid.initialize({ startOnLoad: false, theme: 'neutral', fontFamily: '-apple-system, "PingFang TC", sans-serif' });
+  async function renderVisible() {
+    const nodes = [...document.querySelectorAll('pre.mermaid:not([data-done])')]
+      .filter(n => n.offsetParent !== null);
+    if (!nodes.length) return;
+    nodes.forEach(n => n.dataset.done = '1');
+    try { await mermaid.run({ nodes }); } catch (e) { console.warn('mermaid', e); }
+  }
+  document.addEventListener('toggle', e => {
+    if (e.target instanceof HTMLDetailsElement && e.target.open) renderVisible();
+  }, true);
+  renderVisible();
+}
 </script>
 </body>
 </html>
